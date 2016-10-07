@@ -1036,18 +1036,12 @@ Pass 0]]></RmTextDataBlock></RmStringVariable>
         <RmIntegerVariable NAME="ColorType" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="0" MIN="-10" MAX="10" CLAMP="FALSE"/>
         <RmBooleanVariable NAME="LargeSize" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="FALSE"/>
        </RmRegistryBranch>
-       <RmRegistryBranch NAME="Effect Workspace.Efectos.ProyectoShaders.cSh" API="" XML_VERSION="RenderMonkey 1.71">
-        <RmIntegerVariable NAME="DockPaneID" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="1114" MIN="-10" MAX="10" CLAMP="FALSE"/>
-        <RmBooleanVariable NAME="FloatingPoint" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="FALSE"/>
-        <RmIntegerVariable NAME="ColorType" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="0" MIN="-10" MAX="10" CLAMP="FALSE"/>
-        <RmBooleanVariable NAME="LargeSize" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="TRUE"/>
-       </RmRegistryBranch>
       </RmRegistryBranch>
      </RmRegistryBranch>
     </RmRegistryBranch>
     <RmRegistryBranch NAME="WORKSPACE" API="" XML_VERSION="RenderMonkey 1.71">
      <RmStringVariable NAME="LAST_SAVE" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
-7/10/2016 17:3:2]]></RmTextDataBlock></RmStringVariable>
+7/10/2016 17:51:37]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="VERSION" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
 RenderMonkey Version 1.82 (build 322)]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="XML_VERSION" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
@@ -1061,19 +1055,18 @@ C:\Users\MaríaVictoria\Documents\GitHub\GraficasII\ProyectoShader\]]></RmTextDa
    <RmOpenGLEffect NAME="ProyectoShaders" API="OpenGL" ACTIVE_CAMERA="">
     <RmVectorVariable NAME="lightPosition" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE_0="1.000000" VALUE_1="1.000000" VALUE_2="1.000000" VALUE_3="0.000000" MIN="-10.000000" MAX="10.000000" CLAMP="FALSE" NORMALIZE="FALSE"/>
     <RmFloatVariable NAME="iL" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="1.200000" MIN="0.000000" MAX="1.000000" CLAMP="FALSE"/>
-    <RmFloatVariable NAME="shine" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="9.900000" MIN="0.000000" MAX="1.000000" CLAMP="FALSE"/>
-    <RmFloatVariable NAME="iA" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="0.000000" MIN="0.000000" MAX="1.000000" CLAMP="TRUE"/>
+    <RmFloatVariable NAME="shine" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="30.000000" MIN="0.000000" MAX="1.000000" CLAMP="FALSE"/>
+    <RmFloatVariable NAME="iA" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="0.380000" MIN="0.000000" MAX="1.000000" CLAMP="TRUE"/>
     <RmFloatVariable NAME="iR" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="1.000000" MIN="0.000000" MAX="1.000000" CLAMP="FALSE"/>
     <RmFloatVariable NAME="iSh" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="1.000000" MIN="0.000000" MAX="1.000000" CLAMP="TRUE"/>
     <RmFloatVariable NAME="iS" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="1.000000" MIN="0.000000" MAX="1.000000" CLAMP="TRUE"/>
-    <RmFloatVariable NAME="iD" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="0.000000" MIN="0.000000" MAX="1.000000" CLAMP="TRUE"/>
-    <RmFloatVariable NAME="moho" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="1.000000" MIN="0.000000" MAX="1.000000" CLAMP="TRUE"/>
+    <RmFloatVariable NAME="iD" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="1.000000" MIN="0.000000" MAX="1.000000" CLAMP="TRUE"/>
+    <RmFloatVariable NAME="moho" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="0.000000" MIN="0.000000" MAX="1.000000" CLAMP="TRUE"/>
     <RmFloatVariable NAME="snow" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="0.000000" MIN="0.000000" MAX="1.000000" CLAMP="TRUE"/>
     <RmColorVariable NAME="cL" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="1.000000" VALUE_1="1.000000" VALUE_2="0.873684" VALUE_3="1.000000"/>
     <RmColorVariable NAME="cS" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="0.789474" VALUE_1="0.821053" VALUE_2="0.800000" VALUE_3="1.000000"/>
     <RmColorVariable NAME="cA" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="0.684211" VALUE_1="0.852632" VALUE_2="1.000000" VALUE_3="0.726316"/>
     <RmColorVariable NAME="cM" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="0.000000" VALUE_1="0.515789" VALUE_2="0.022287" VALUE_3="1.000000"/>
-    <RmColorVariable NAME="cSh" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE_0="1.000000" VALUE_1="1.000000" VALUE_2="1.000000" VALUE_3="1.000000"/>
     <Rm2DTextureVariable NAME="Terreno_normal" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\terreno_normal.jpg" ORIGIN="0"/>
     <Rm2DTextureVariable NAME="terreno_snow" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\terreno_snow.tga" ORIGIN="0"/>
     <Rm2DTextureVariable NAME="terreno_snow_normal" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\terreno_snow_normal.tga" ORIGIN="0"/>
@@ -1182,7 +1175,7 @@ void main(void)
    //cSpec = cSpec*cSpecularT; // Aplicación de la textura specular
    
    // Sombra
-   vec4 sombra = mix(cColorT,cSh*iSh,maskShadow);
+   vec4 sombra = mix(cColorT,cColorT*maskShadow,iSh);
    
    // Moho
    vec4 mohoMix = mix(cColorT,cM*moho,maskMoho);
@@ -1193,7 +1186,7 @@ void main(void)
    vec4 spec = mix(cColorT,cS,cSpecularT);
   
    //colorFinal = iA*cA*colorDifuso*mohoMix + iL*(cL *(colorDifuso* dotLN + cSpec)); 
-   colorFinal = iA*cA*colorDifuso*mohoMix + iL*(cL *(colorDifuso* dotLN + cSpec*spec));
+   colorFinal = iA*cA*colorDifuso*mohoMix*sombra + iL*(cL *(colorDifuso* dotLN + cSpec*spec));
   
    gl_FragColor = colorFinal;
 }]]></RmShaderCode></RmGLShader>
@@ -1238,7 +1231,6 @@ void main(void)
      <RmShaderConstant NAME="shine" API="" REGISTER="-1"/>
      <RmShaderConstant NAME="iS" API="" REGISTER="-1"/>
      <RmShaderConstant NAME="cS" API="" REGISTER="-1"/>
-     <RmShaderConstant NAME="cSh" API="" REGISTER="-1"/>
      <RmShaderConstant NAME="iSh" API="" REGISTER="-1"/>
      <RmShaderConstant NAME="cM" API="" REGISTER="-1"/>
      <RmShaderConstant NAME="moho" API="" REGISTER="-1"/>
