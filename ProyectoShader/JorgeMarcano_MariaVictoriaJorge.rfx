@@ -1031,7 +1031,7 @@ Pass 0]]></RmTextDataBlock></RmStringVariable>
     </RmRegistryBranch>
     <RmRegistryBranch NAME="WORKSPACE" API="" XML_VERSION="RenderMonkey 1.71">
      <RmStringVariable NAME="LAST_SAVE" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
-6/10/2016 20:34:31]]></RmTextDataBlock></RmStringVariable>
+6/10/2016 20:36:52]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="VERSION" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
 RenderMonkey Version 1.82 (build 322)]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="XML_VERSION" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
@@ -1142,6 +1142,10 @@ void main(void)
    vec3 N;
    
    N = normalize(cNormalT);
+   
+   //Reflexion
+   //vec3 vReflexion = normalize(reflect(-normalize(vC),N));
+   //vec4 envColor = texture(txReflection, vReflexion);
    
    //Color Difuso
    colorDifuso = mix(cColorT,cA,0);
