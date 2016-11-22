@@ -1,6 +1,6 @@
 //Maya ASCII 2016 scene
 //Name: moneda.ma
-//Last modified: Tue, Nov 22, 2016 03:15:56 PM
+//Last modified: Tue, Nov 22, 2016 03:20:05 PM
 //Codeset: 1252
 requires maya "2016";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "3223E992-41C9-D469-B3D5-C9BCBADDEC0D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.6976331953996739 1.157098113635048 -8.2460710420443792 ;
-	setAttr ".r" -type "double3" -2.7383527294755643 189.80000000020883 0 ;
+	setAttr ".t" -type "double3" -1.5833705952830943 0.94426514116903704 11.24716077807742 ;
+	setAttr ".r" -type "double3" -0.9383527294485009 353.40000000016295 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3886EAC7-4C2F-5ADE-CF71-2AA9BA7A1ED4";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 8.346960320932542;
+	setAttr ".coi" 11.354223018696306;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -578,6 +578,7 @@ createNode mesh -n "moneda1Shape" -p "moneda1";
 	setAttr -s 10 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.48928580159554258 0.5000000037252903 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -1064,8 +1065,16 @@ createNode groupParts -n "groupParts28";
 	rename -uid "F1E98162-4E96-13E6-3C5F-87A3261802B5";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 2 "e[1200:1227]" "e[1300:1327]";
+createNode polyAutoProj -n "polyAutoProj1";
+	rename -uid "BC198577-489E-8BD6-CC05-17987F1D438E";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 1 "f[602:689]";
+	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
+	setAttr ".s" -type "double3" 1.4077926874160767 1.4077926874160767 1.4077926874160767 ;
+	setAttr ".ps" 0.20000000298023224;
+	setAttr ".dl" yes;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "08F36428-4EEC-946F-59EB-7A9DF7486BCD";
+	rename -uid "30AC4765-4981-FA04-C50D-19A9531A05C0";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -384.52379424420673 -627.48601361755834 ;
 	setAttr ".tgi[0].vh" -type "double2" 628.57140359424523 144.15269949016539 ;
@@ -1147,7 +1156,7 @@ connectAttr "set3.mwc" "logo02Shape.iog.og[2].gco";
 connectAttr "groupId39.id" "logo02Shape.iog.og[3].gid";
 connectAttr "blinn2SG.mwc" "logo02Shape.iog.og[3].gco";
 connectAttr "groupId40.id" "logo02Shape.ciog.cog[1].cgid";
-connectAttr "groupParts28.og" "moneda1Shape.i";
+connectAttr "polyAutoProj1.out" "moneda1Shape.i";
 connectAttr "groupId41.id" "moneda1Shape.iog.og[0].gid";
 connectAttr "blinn2SG.mwc" "moneda1Shape.iog.og[0].gco";
 connectAttr "groupId42.id" "moneda1Shape.iog.og[1].gid";
@@ -1283,6 +1292,8 @@ connectAttr "groupParts26.og" "groupParts27.ig";
 connectAttr "groupId44.id" "groupParts27.gi";
 connectAttr "groupParts27.og" "groupParts28.ig";
 connectAttr "groupId45.id" "groupParts28.gi";
+connectAttr "groupParts28.og" "polyAutoProj1.ip";
+connectAttr "moneda1Shape.wm" "polyAutoProj1.mp";
 connectAttr "blinn1SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
 		;
 connectAttr "matMoneda01.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
