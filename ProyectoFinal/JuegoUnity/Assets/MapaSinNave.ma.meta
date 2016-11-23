@@ -1,0 +1,1066 @@
+fileFormatVersion: 2
+guid: 129dab5b165026c46997e53e49c467cb
+timeCreated: 1479932446
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bend10Handle
+    100002: bend4Handle
+    100004: bend5Handle
+    100006: bend6Handle
+    100008: bend7Handle
+    100010: bend8Handle
+    100012: bend9Handle
+    100014: Cube1
+    100016: Cube1 1
+    100018: Curva1
+    100020: Curva1BendHandler
+    100022: Curva2Handle
+    100024: Curva3
+    100026: CurvaSalidaTunel
+    100028: EndFlag
+    100030: FlagGroup
+    100032: group
+    100034: //RootNode
+    100036: nave:aspasTurb01
+    100038: nave:aspasTurb02
+    100040: nave:aspasTurbina
+    100042: nave:aspasTurbina1
+    100044: nave:baseTorreta
+    100046: nave:baseTorreta01
+    100048: nave:baseTorreta02
+    100050: nave:centroNave01
+    100052: nave:centroNave02
+    100054: nave:logo
+    100056: nave:nave
+    100058: nave:torreta
+    100060: nave:torretaEsfera
+    100062: nave:torretaMisil
+    100064: nave:transform1
+    100066: nave:transform10
+    100068: nave:transform11
+    100070: nave:transform12
+    100072: nave:transform13
+    100074: nave:transform14
+    100076: nave:transform15
+    100078: nave:transform16
+    100080: nave:transform17
+    100082: nave:transform18
+    100084: nave:transform19
+    100086: nave:transform2
+    100088: nave:transform3
+    100090: nave:transform4
+    100092: nave:transform5
+    100094: nave:transform6
+    100096: nave:transform7
+    100098: nave:turbina01
+    100100: nave:turbinaDerecha
+    100102: nave:turbinaIzq
+    100104: pCube1
+    100106: pCylinder1
+    100108: pCylinder1 1
+    100110: PipeGroup
+    100112: pPipe1
+    100114: pPipe2
+    100116: pPipe3
+    100118: pPipe4
+    100120: Propellor1
+    100122: Propellor2
+    100124: Propellor3
+    100126: PropellorGroup
+    100128: Recta1
+    100130: Recta2
+    100132: Recta3
+    100134: Recta4
+    100136: Sawblade1
+    100138: Sawblade10
+    100140: Sawblade11
+    100142: Sawblade11 1
+    100144: Sawblade12
+    100146: Sawblade12 1
+    100148: Sawblade13
+    100150: Sawblade13 1
+    100152: Sawblade2
+    100154: Sawblade3
+    100156: Sawblade4
+    100158: Sawblade5
+    100160: Sawblade7
+    100162: Sawblade9
+    100164: SawbladeCylinder1
+    100166: SawbladeCylinder2
+    100168: SawbladeGroup
+    100170: SawbladeWall
+    100172: Spike1
+    100174: Spike1 1
+    100176: Spike1 10
+    100178: Spike1 2
+    100180: Spike1 3
+    100182: Spike1 4
+    100184: Spike1 5
+    100186: Spike1 6
+    100188: Spike1 7
+    100190: Spike1 8
+    100192: Spike1 9
+    100194: Spike10
+    100196: Spike11
+    100198: Spike12
+    100200: Spike13
+    100202: Spike14
+    100204: Spike15
+    100206: Spike16
+    100208: Spike17
+    100210: Spike18
+    100212: Spike2
+    100214: Spike2 1
+    100216: Spike2 10
+    100218: Spike2 2
+    100220: Spike2 3
+    100222: Spike2 4
+    100224: Spike2 5
+    100226: Spike2 6
+    100228: Spike2 7
+    100230: Spike2 8
+    100232: Spike2 9
+    100234: Spike3
+    100236: Spike3 1
+    100238: Spike3 10
+    100240: Spike3 2
+    100242: Spike3 3
+    100244: Spike3 4
+    100246: Spike3 5
+    100248: Spike3 6
+    100250: Spike3 7
+    100252: Spike3 8
+    100254: Spike3 9
+    100256: Spike4
+    100258: Spike4 1
+    100260: Spike4 10
+    100262: Spike4 2
+    100264: Spike4 3
+    100266: Spike4 4
+    100268: Spike4 5
+    100270: Spike4 6
+    100272: Spike4 7
+    100274: Spike4 8
+    100276: Spike4 9
+    100278: Spike5
+    100280: Spike5 1
+    100282: Spike5 10
+    100284: Spike5 2
+    100286: Spike5 3
+    100288: Spike5 4
+    100290: Spike5 5
+    100292: Spike5 6
+    100294: Spike5 7
+    100296: Spike5 8
+    100298: Spike5 9
+    100300: Spike6
+    100302: Spike6 1
+    100304: Spike6 10
+    100306: Spike6 2
+    100308: Spike6 3
+    100310: Spike6 4
+    100312: Spike6 5
+    100314: Spike6 6
+    100316: Spike6 7
+    100318: Spike6 8
+    100320: Spike6 9
+    100322: Spike7
+    100324: Spike7 1
+    100326: Spike7 2
+    100328: Spike7 3
+    100330: Spike7 4
+    100332: Spike7 5
+    100334: Spike7 6
+    100336: Spike7 7
+    100338: Spike8
+    100340: Spike8 1
+    100342: Spike8 2
+    100344: Spike8 3
+    100346: Spike8 4
+    100348: Spike8 5
+    100350: Spike8 6
+    100352: Spike8 7
+    100354: Spike9
+    100356: Spike9 1
+    100358: Spike9 2
+    100360: Spike9 3
+    100362: Spike9 4
+    100364: Spike9 5
+    100366: Spike9 6
+    100368: Spike9 7
+    100370: SpikeCubeTrap
+    100372: SpikeCubeTrap2
+    100374: SpikeRow1
+    100376: SpikeRow1 1
+    100378: SpikeRow2
+    100380: SpikeRow2 1
+    100382: SpikeRow3
+    100384: SpikeRow3 1
+    100386: SpikeRow4
+    100388: SpikeRow4 1
+    100390: SpikeRow5
+    100392: SpikeRow5 1
+    100394: SpikeRow6
+    100396: SpikeRow6 1
+    100398: SpikeRow7
+    100400: SpikeRow7 1
+    100402: SpikeRow8
+    100404: SpikeRow8 1
+    100406: SpikeRow9
+    100408: SpikeRow9 1
+    100410: SpikeSurface1
+    100412: SpikeSurface1 1
+    100414: StartFlag
+    100416: Tunel1
+    100418: TunnelCeiling1
+    100420: TunnelCeiling1Back
+    100422: TunnelCeiling1Group
+    100424: TunnelCeiling2
+    100426: TunnelCeiling2Back
+    100428: TunnelCeiling2Group
+    100430: TunnelDiv1
+    100432: TunnelDiv1Back
+    100434: TunnelDiv2
+    100436: TunnelDiv2Back
+    100438: TunnelDivision1Group
+    100440: TunnelDivision2Group
+    100442: TunnelEntrance
+    100444: TunnelEntranceBack
+    100446: TunnelEntranceGroup
+    100448: TunnelExit
+    100450: TunnelExit2
+    100452: TunnelExit2Back
+    100454: TunnelExit2Group
+    100456: TunnelExitBack
+    100458: TunnelExitGroup
+    100460: TunnelGroup
+    100462: TunnelWal1
+    100464: TunnelWal2Back
+    100466: TunnelWall1Back
+    100468: TunnelWall1Group
+    100470: TunnelWall2
+    100472: TunnelWall2Group
+    100474: Wall1
+    100476: Wall1Right
+    100478: Wall1Right1
+    100480: Wall2
+    100482: Wall2Left
+    100484: Wall2Left1
+    100486: Wall2Right
+    100488: Wall3
+    100490: Wall3Left
+    100492: Wall3Right
+    100494: Wall4Left
+    100496: WallCurva1Right
+    100498: WallCurva2Left
+    100500: WallCurva4Right1
+    400000: bend10Handle
+    400002: bend4Handle
+    400004: bend5Handle
+    400006: bend6Handle
+    400008: bend7Handle
+    400010: bend8Handle
+    400012: bend9Handle
+    400014: Cube1
+    400016: Cube1 1
+    400018: Curva1
+    400020: Curva1BendHandler
+    400022: Curva2Handle
+    400024: Curva3
+    400026: CurvaSalidaTunel
+    400028: EndFlag
+    400030: FlagGroup
+    400032: group
+    400034: //RootNode
+    400036: nave:aspasTurb01
+    400038: nave:aspasTurb02
+    400040: nave:aspasTurbina
+    400042: nave:aspasTurbina1
+    400044: nave:baseTorreta
+    400046: nave:baseTorreta01
+    400048: nave:baseTorreta02
+    400050: nave:centroNave01
+    400052: nave:centroNave02
+    400054: nave:logo
+    400056: nave:nave
+    400058: nave:torreta
+    400060: nave:torretaEsfera
+    400062: nave:torretaMisil
+    400064: nave:transform1
+    400066: nave:transform10
+    400068: nave:transform11
+    400070: nave:transform12
+    400072: nave:transform13
+    400074: nave:transform14
+    400076: nave:transform15
+    400078: nave:transform16
+    400080: nave:transform17
+    400082: nave:transform18
+    400084: nave:transform19
+    400086: nave:transform2
+    400088: nave:transform3
+    400090: nave:transform4
+    400092: nave:transform5
+    400094: nave:transform6
+    400096: nave:transform7
+    400098: nave:turbina01
+    400100: nave:turbinaDerecha
+    400102: nave:turbinaIzq
+    400104: pCube1
+    400106: pCylinder1
+    400108: pCylinder1 1
+    400110: PipeGroup
+    400112: pPipe1
+    400114: pPipe2
+    400116: pPipe3
+    400118: pPipe4
+    400120: Propellor1
+    400122: Propellor2
+    400124: Propellor3
+    400126: PropellorGroup
+    400128: Recta1
+    400130: Recta2
+    400132: Recta3
+    400134: Recta4
+    400136: Sawblade1
+    400138: Sawblade10
+    400140: Sawblade11
+    400142: Sawblade11 1
+    400144: Sawblade12
+    400146: Sawblade12 1
+    400148: Sawblade13
+    400150: Sawblade13 1
+    400152: Sawblade2
+    400154: Sawblade3
+    400156: Sawblade4
+    400158: Sawblade5
+    400160: Sawblade7
+    400162: Sawblade9
+    400164: SawbladeCylinder1
+    400166: SawbladeCylinder2
+    400168: SawbladeGroup
+    400170: SawbladeWall
+    400172: Spike1
+    400174: Spike1 1
+    400176: Spike1 10
+    400178: Spike1 2
+    400180: Spike1 3
+    400182: Spike1 4
+    400184: Spike1 5
+    400186: Spike1 6
+    400188: Spike1 7
+    400190: Spike1 8
+    400192: Spike1 9
+    400194: Spike10
+    400196: Spike11
+    400198: Spike12
+    400200: Spike13
+    400202: Spike14
+    400204: Spike15
+    400206: Spike16
+    400208: Spike17
+    400210: Spike18
+    400212: Spike2
+    400214: Spike2 1
+    400216: Spike2 10
+    400218: Spike2 2
+    400220: Spike2 3
+    400222: Spike2 4
+    400224: Spike2 5
+    400226: Spike2 6
+    400228: Spike2 7
+    400230: Spike2 8
+    400232: Spike2 9
+    400234: Spike3
+    400236: Spike3 1
+    400238: Spike3 10
+    400240: Spike3 2
+    400242: Spike3 3
+    400244: Spike3 4
+    400246: Spike3 5
+    400248: Spike3 6
+    400250: Spike3 7
+    400252: Spike3 8
+    400254: Spike3 9
+    400256: Spike4
+    400258: Spike4 1
+    400260: Spike4 10
+    400262: Spike4 2
+    400264: Spike4 3
+    400266: Spike4 4
+    400268: Spike4 5
+    400270: Spike4 6
+    400272: Spike4 7
+    400274: Spike4 8
+    400276: Spike4 9
+    400278: Spike5
+    400280: Spike5 1
+    400282: Spike5 10
+    400284: Spike5 2
+    400286: Spike5 3
+    400288: Spike5 4
+    400290: Spike5 5
+    400292: Spike5 6
+    400294: Spike5 7
+    400296: Spike5 8
+    400298: Spike5 9
+    400300: Spike6
+    400302: Spike6 1
+    400304: Spike6 10
+    400306: Spike6 2
+    400308: Spike6 3
+    400310: Spike6 4
+    400312: Spike6 5
+    400314: Spike6 6
+    400316: Spike6 7
+    400318: Spike6 8
+    400320: Spike6 9
+    400322: Spike7
+    400324: Spike7 1
+    400326: Spike7 2
+    400328: Spike7 3
+    400330: Spike7 4
+    400332: Spike7 5
+    400334: Spike7 6
+    400336: Spike7 7
+    400338: Spike8
+    400340: Spike8 1
+    400342: Spike8 2
+    400344: Spike8 3
+    400346: Spike8 4
+    400348: Spike8 5
+    400350: Spike8 6
+    400352: Spike8 7
+    400354: Spike9
+    400356: Spike9 1
+    400358: Spike9 2
+    400360: Spike9 3
+    400362: Spike9 4
+    400364: Spike9 5
+    400366: Spike9 6
+    400368: Spike9 7
+    400370: SpikeCubeTrap
+    400372: SpikeCubeTrap2
+    400374: SpikeRow1
+    400376: SpikeRow1 1
+    400378: SpikeRow2
+    400380: SpikeRow2 1
+    400382: SpikeRow3
+    400384: SpikeRow3 1
+    400386: SpikeRow4
+    400388: SpikeRow4 1
+    400390: SpikeRow5
+    400392: SpikeRow5 1
+    400394: SpikeRow6
+    400396: SpikeRow6 1
+    400398: SpikeRow7
+    400400: SpikeRow7 1
+    400402: SpikeRow8
+    400404: SpikeRow8 1
+    400406: SpikeRow9
+    400408: SpikeRow9 1
+    400410: SpikeSurface1
+    400412: SpikeSurface1 1
+    400414: StartFlag
+    400416: Tunel1
+    400418: TunnelCeiling1
+    400420: TunnelCeiling1Back
+    400422: TunnelCeiling1Group
+    400424: TunnelCeiling2
+    400426: TunnelCeiling2Back
+    400428: TunnelCeiling2Group
+    400430: TunnelDiv1
+    400432: TunnelDiv1Back
+    400434: TunnelDiv2
+    400436: TunnelDiv2Back
+    400438: TunnelDivision1Group
+    400440: TunnelDivision2Group
+    400442: TunnelEntrance
+    400444: TunnelEntranceBack
+    400446: TunnelEntranceGroup
+    400448: TunnelExit
+    400450: TunnelExit2
+    400452: TunnelExit2Back
+    400454: TunnelExit2Group
+    400456: TunnelExitBack
+    400458: TunnelExitGroup
+    400460: TunnelGroup
+    400462: TunnelWal1
+    400464: TunnelWal2Back
+    400466: TunnelWall1Back
+    400468: TunnelWall1Group
+    400470: TunnelWall2
+    400472: TunnelWall2Group
+    400474: Wall1
+    400476: Wall1Right
+    400478: Wall1Right1
+    400480: Wall2
+    400482: Wall2Left
+    400484: Wall2Left1
+    400486: Wall2Right
+    400488: Wall3
+    400490: Wall3Left
+    400492: Wall3Right
+    400494: Wall4Left
+    400496: WallCurva1Right
+    400498: WallCurva2Left
+    400500: WallCurva4Right1
+    2300000: Cube1
+    2300002: Cube1 1
+    2300004: Curva1
+    2300006: Curva3
+    2300008: CurvaSalidaTunel
+    2300010: EndFlag
+    2300012: pCube1
+    2300014: pCylinder1
+    2300016: pCylinder1 1
+    2300018: pPipe1
+    2300020: pPipe2
+    2300022: pPipe3
+    2300024: pPipe4
+    2300026: Propellor1
+    2300028: Propellor2
+    2300030: Propellor3
+    2300032: Recta1
+    2300034: Recta2
+    2300036: Recta3
+    2300038: Recta4
+    2300040: Sawblade1
+    2300042: Sawblade10
+    2300044: Sawblade11
+    2300046: Sawblade11 1
+    2300048: Sawblade12
+    2300050: Sawblade12 1
+    2300052: Sawblade13
+    2300054: Sawblade13 1
+    2300056: Sawblade2
+    2300058: Sawblade3
+    2300060: Sawblade4
+    2300062: Sawblade5
+    2300064: Sawblade7
+    2300066: Sawblade9
+    2300068: Spike1
+    2300070: Spike1 1
+    2300072: Spike1 10
+    2300074: Spike1 2
+    2300076: Spike1 3
+    2300078: Spike1 4
+    2300080: Spike1 5
+    2300082: Spike1 6
+    2300084: Spike1 7
+    2300086: Spike1 8
+    2300088: Spike1 9
+    2300090: Spike10
+    2300092: Spike11
+    2300094: Spike12
+    2300096: Spike13
+    2300098: Spike14
+    2300100: Spike15
+    2300102: Spike16
+    2300104: Spike17
+    2300106: Spike18
+    2300108: Spike2
+    2300110: Spike2 1
+    2300112: Spike2 10
+    2300114: Spike2 2
+    2300116: Spike2 3
+    2300118: Spike2 4
+    2300120: Spike2 5
+    2300122: Spike2 6
+    2300124: Spike2 7
+    2300126: Spike2 8
+    2300128: Spike2 9
+    2300130: Spike3
+    2300132: Spike3 1
+    2300134: Spike3 10
+    2300136: Spike3 2
+    2300138: Spike3 3
+    2300140: Spike3 4
+    2300142: Spike3 5
+    2300144: Spike3 6
+    2300146: Spike3 7
+    2300148: Spike3 8
+    2300150: Spike3 9
+    2300152: Spike4
+    2300154: Spike4 1
+    2300156: Spike4 10
+    2300158: Spike4 2
+    2300160: Spike4 3
+    2300162: Spike4 4
+    2300164: Spike4 5
+    2300166: Spike4 6
+    2300168: Spike4 7
+    2300170: Spike4 8
+    2300172: Spike4 9
+    2300174: Spike5
+    2300176: Spike5 1
+    2300178: Spike5 10
+    2300180: Spike5 2
+    2300182: Spike5 3
+    2300184: Spike5 4
+    2300186: Spike5 5
+    2300188: Spike5 6
+    2300190: Spike5 7
+    2300192: Spike5 8
+    2300194: Spike5 9
+    2300196: Spike6
+    2300198: Spike6 1
+    2300200: Spike6 10
+    2300202: Spike6 2
+    2300204: Spike6 3
+    2300206: Spike6 4
+    2300208: Spike6 5
+    2300210: Spike6 6
+    2300212: Spike6 7
+    2300214: Spike6 8
+    2300216: Spike6 9
+    2300218: Spike7
+    2300220: Spike7 1
+    2300222: Spike7 2
+    2300224: Spike7 3
+    2300226: Spike7 4
+    2300228: Spike7 5
+    2300230: Spike7 6
+    2300232: Spike7 7
+    2300234: Spike8
+    2300236: Spike8 1
+    2300238: Spike8 2
+    2300240: Spike8 3
+    2300242: Spike8 4
+    2300244: Spike8 5
+    2300246: Spike8 6
+    2300248: Spike8 7
+    2300250: Spike9
+    2300252: Spike9 1
+    2300254: Spike9 2
+    2300256: Spike9 3
+    2300258: Spike9 4
+    2300260: Spike9 5
+    2300262: Spike9 6
+    2300264: Spike9 7
+    2300266: StartFlag
+    2300268: Tunel1
+    2300270: TunnelCeiling1
+    2300272: TunnelCeiling1Back
+    2300274: TunnelCeiling2
+    2300276: TunnelCeiling2Back
+    2300278: TunnelDiv1
+    2300280: TunnelDiv1Back
+    2300282: TunnelDiv2
+    2300284: TunnelDiv2Back
+    2300286: TunnelEntrance
+    2300288: TunnelEntranceBack
+    2300290: TunnelExit
+    2300292: TunnelExit2
+    2300294: TunnelExit2Back
+    2300296: TunnelExitBack
+    2300298: TunnelWal1
+    2300300: TunnelWal2Back
+    2300302: TunnelWall1Back
+    2300304: TunnelWall2
+    2300306: Wall1Right
+    2300308: Wall1Right1
+    2300310: Wall2Left
+    2300312: Wall2Left1
+    2300314: Wall2Right
+    2300316: Wall3Left
+    2300318: Wall3Right
+    2300320: Wall4Left
+    2300322: WallCurva1Right
+    2300324: WallCurva2Left
+    2300326: WallCurva4Right1
+    3300000: Cube1
+    3300002: Cube1 1
+    3300004: Curva1
+    3300006: Curva3
+    3300008: CurvaSalidaTunel
+    3300010: EndFlag
+    3300012: pCube1
+    3300014: pCylinder1
+    3300016: pCylinder1 1
+    3300018: pPipe1
+    3300020: pPipe2
+    3300022: pPipe3
+    3300024: pPipe4
+    3300026: Propellor1
+    3300028: Propellor2
+    3300030: Propellor3
+    3300032: Recta1
+    3300034: Recta2
+    3300036: Recta3
+    3300038: Recta4
+    3300040: Sawblade1
+    3300042: Sawblade10
+    3300044: Sawblade11
+    3300046: Sawblade11 1
+    3300048: Sawblade12
+    3300050: Sawblade12 1
+    3300052: Sawblade13
+    3300054: Sawblade13 1
+    3300056: Sawblade2
+    3300058: Sawblade3
+    3300060: Sawblade4
+    3300062: Sawblade5
+    3300064: Sawblade7
+    3300066: Sawblade9
+    3300068: Spike1
+    3300070: Spike1 1
+    3300072: Spike1 10
+    3300074: Spike1 2
+    3300076: Spike1 3
+    3300078: Spike1 4
+    3300080: Spike1 5
+    3300082: Spike1 6
+    3300084: Spike1 7
+    3300086: Spike1 8
+    3300088: Spike1 9
+    3300090: Spike10
+    3300092: Spike11
+    3300094: Spike12
+    3300096: Spike13
+    3300098: Spike14
+    3300100: Spike15
+    3300102: Spike16
+    3300104: Spike17
+    3300106: Spike18
+    3300108: Spike2
+    3300110: Spike2 1
+    3300112: Spike2 10
+    3300114: Spike2 2
+    3300116: Spike2 3
+    3300118: Spike2 4
+    3300120: Spike2 5
+    3300122: Spike2 6
+    3300124: Spike2 7
+    3300126: Spike2 8
+    3300128: Spike2 9
+    3300130: Spike3
+    3300132: Spike3 1
+    3300134: Spike3 10
+    3300136: Spike3 2
+    3300138: Spike3 3
+    3300140: Spike3 4
+    3300142: Spike3 5
+    3300144: Spike3 6
+    3300146: Spike3 7
+    3300148: Spike3 8
+    3300150: Spike3 9
+    3300152: Spike4
+    3300154: Spike4 1
+    3300156: Spike4 10
+    3300158: Spike4 2
+    3300160: Spike4 3
+    3300162: Spike4 4
+    3300164: Spike4 5
+    3300166: Spike4 6
+    3300168: Spike4 7
+    3300170: Spike4 8
+    3300172: Spike4 9
+    3300174: Spike5
+    3300176: Spike5 1
+    3300178: Spike5 10
+    3300180: Spike5 2
+    3300182: Spike5 3
+    3300184: Spike5 4
+    3300186: Spike5 5
+    3300188: Spike5 6
+    3300190: Spike5 7
+    3300192: Spike5 8
+    3300194: Spike5 9
+    3300196: Spike6
+    3300198: Spike6 1
+    3300200: Spike6 10
+    3300202: Spike6 2
+    3300204: Spike6 3
+    3300206: Spike6 4
+    3300208: Spike6 5
+    3300210: Spike6 6
+    3300212: Spike6 7
+    3300214: Spike6 8
+    3300216: Spike6 9
+    3300218: Spike7
+    3300220: Spike7 1
+    3300222: Spike7 2
+    3300224: Spike7 3
+    3300226: Spike7 4
+    3300228: Spike7 5
+    3300230: Spike7 6
+    3300232: Spike7 7
+    3300234: Spike8
+    3300236: Spike8 1
+    3300238: Spike8 2
+    3300240: Spike8 3
+    3300242: Spike8 4
+    3300244: Spike8 5
+    3300246: Spike8 6
+    3300248: Spike8 7
+    3300250: Spike9
+    3300252: Spike9 1
+    3300254: Spike9 2
+    3300256: Spike9 3
+    3300258: Spike9 4
+    3300260: Spike9 5
+    3300262: Spike9 6
+    3300264: Spike9 7
+    3300266: StartFlag
+    3300268: Tunel1
+    3300270: TunnelCeiling1
+    3300272: TunnelCeiling1Back
+    3300274: TunnelCeiling2
+    3300276: TunnelCeiling2Back
+    3300278: TunnelDiv1
+    3300280: TunnelDiv1Back
+    3300282: TunnelDiv2
+    3300284: TunnelDiv2Back
+    3300286: TunnelEntrance
+    3300288: TunnelEntranceBack
+    3300290: TunnelExit
+    3300292: TunnelExit2
+    3300294: TunnelExit2Back
+    3300296: TunnelExitBack
+    3300298: TunnelWal1
+    3300300: TunnelWal2Back
+    3300302: TunnelWall1Back
+    3300304: TunnelWall2
+    3300306: Wall1Right
+    3300308: Wall1Right1
+    3300310: Wall2Left
+    3300312: Wall2Left1
+    3300314: Wall2Right
+    3300316: Wall3Left
+    3300318: Wall3Right
+    3300320: Wall4Left
+    3300322: WallCurva1Right
+    3300324: WallCurva2Left
+    3300326: WallCurva4Right1
+    4300000: Recta1
+    4300002: Recta2
+    4300004: Recta3
+    4300006: Tunel1
+    4300008: TunnelExit
+    4300010: TunnelExitBack
+    4300012: TunnelEntrance
+    4300014: TunnelEntranceBack
+    4300016: TunnelWall1Back
+    4300018: TunnelWal1
+    4300020: TunnelWall2
+    4300022: TunnelWal2Back
+    4300024: TunnelCeiling1
+    4300026: TunnelCeiling1Back
+    4300028: TunnelCeiling2
+    4300030: TunnelCeiling2Back
+    4300032: TunnelDiv1
+    4300034: TunnelDiv1Back
+    4300036: TunnelDiv2
+    4300038: TunnelDiv2Back
+    4300040: TunnelExit2Back
+    4300042: TunnelExit2
+    4300044: Curva1
+    4300046: Curva3
+    4300048: Wall1Right
+    4300050: Wall1Right1
+    4300052: Wall2Left
+    4300054: Wall2Right
+    4300056: Wall3Left
+    4300058: Wall3Right
+    4300060: WallCurva1Right
+    4300062: WallCurva2Left
+    4300064: Wall4Left
+    4300066: Sawblade1
+    4300068: Sawblade2
+    4300070: Sawblade3
+    4300072: Sawblade10
+    4300074: Sawblade9
+    4300076: pCube1
+    4300078: Sawblade7
+    4300080: Sawblade4
+    4300082: Sawblade5
+    4300084: WallCurva4Right1
+    4300086: CurvaSalidaTunel
+    4300088: Wall2Left1
+    4300090: Sawblade11
+    4300092: Sawblade13
+    4300094: Sawblade12
+    4300096: pCylinder1
+    4300098: Sawblade11
+    4300100: Sawblade13
+    4300102: Sawblade12
+    4300104: pCylinder1
+    4300106: Propellor1
+    4300108: Propellor2
+    4300110: Propellor3
+    4300112: StartFlag
+    4300114: EndFlag
+    4300116: Spike1
+    4300118: Spike2
+    4300120: Spike3
+    4300122: Spike4
+    4300124: Spike5
+    4300126: Spike6
+    4300128: Spike1
+    4300130: Spike2
+    4300132: Spike3
+    4300134: Spike4
+    4300136: Spike1
+    4300138: Spike2
+    4300140: Spike7
+    4300142: Spike8
+    4300144: Spike9
+    4300146: Spike5
+    4300148: Spike6
+    4300150: Spike7
+    4300152: Spike8
+    4300154: Spike9
+    4300156: Spike3
+    4300158: Spike4
+    4300160: Spike5
+    4300162: Spike6
+    4300164: Spike7
+    4300166: Spike8
+    4300168: Spike9
+    4300170: Spike1
+    4300172: Spike2
+    4300174: Spike3
+    4300176: Spike4
+    4300178: Spike5
+    4300180: Spike6
+    4300182: Spike7
+    4300184: Spike8
+    4300186: Spike9
+    4300188: Spike1
+    4300190: Spike2
+    4300192: Spike3
+    4300194: Spike4
+    4300196: Spike5
+    4300198: Spike6
+    4300200: Spike7
+    4300202: Spike8
+    4300204: Spike9
+    4300206: Cube1
+    4300208: Spike1
+    4300210: Spike2
+    4300212: Spike3
+    4300214: Spike4
+    4300216: Spike5
+    4300218: Spike6
+    4300220: Spike10
+    4300222: Spike11
+    4300224: Spike12
+    4300226: Spike1
+    4300228: Spike2
+    4300230: Spike3
+    4300232: Spike4
+    4300234: Spike5
+    4300236: Spike6
+    4300238: Spike13
+    4300240: Spike14
+    4300242: Spike15
+    4300244: Spike1
+    4300246: Spike2
+    4300248: Spike3
+    4300250: Spike4
+    4300252: Spike5
+    4300254: Spike6
+    4300256: Spike16
+    4300258: Spike17
+    4300260: Spike18
+    4300262: Spike1
+    4300264: Spike2
+    4300266: Spike3
+    4300268: Spike4
+    4300270: Spike5
+    4300272: Spike6
+    4300274: Spike7
+    4300276: Spike8
+    4300278: Spike9
+    4300280: Spike1
+    4300282: Spike2
+    4300284: Spike3
+    4300286: Spike4
+    4300288: Spike5
+    4300290: Spike6
+    4300292: Spike7
+    4300294: Spike8
+    4300296: Spike9
+    4300298: Spike1
+    4300300: Spike2
+    4300302: Spike3
+    4300304: Spike4
+    4300306: Spike5
+    4300308: Spike6
+    4300310: Spike7
+    4300312: Spike8
+    4300314: Spike9
+    4300316: Cube1
+    4300318: Recta4
+    4300320: pPipe1
+    4300322: pPipe2
+    4300324: pPipe3
+    4300326: pPipe4
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
