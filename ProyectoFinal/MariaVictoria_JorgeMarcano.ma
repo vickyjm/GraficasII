@@ -1,6 +1,6 @@
 //Maya ASCII 2016 scene
-//Name: MapaBasico.ma
-//Last modified: Sat, Nov 19, 2016 04:05:29 PM
+//Name: MariaVictoria_JorgeMarcano.ma
+//Last modified: Tue, Nov 22, 2016 04:56:16 PM
 //Codeset: 1252
 requires maya "2016";
 requires "stereoCamera" "10.0";
@@ -17,8 +17,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "B4F45815-45F4-E98A-7BDE-52B26084D30E";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 677.8778881300957 94.566870855738884 211.21952272661005 ;
-	setAttr ".r" -type "double3" -25.399999999925253 -288.80000000006322 -4.9346777030955963e-015 ;
+	setAttr ".t" -type "double3" 47.062141547072642 65.879865874571223 137.14643296218225 ;
+	setAttr ".r" -type "double3" -29.599999999925345 -320.00000000005787 2.07595963264943e-015 ;
 	setAttr ".rp" -type "double3" -1.1368683772161603e-013 0 0 ;
 	setAttr ".rpt" -type "double3" 1.9255091002381011e-014 -6.4377906663274943e-015 
 		5.7869854685563695e-014 ;
@@ -26,7 +26,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "10124971-4439-CA31-2D5D-708B4C10D0FD";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 17.999987882312215;
-	setAttr ".coi" 43.475385705592899;
+	setAttr ".coi" 62.712613056033774;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -74,6 +74,13 @@ createNode transform -n "Recta1";
 	setAttr ".s" -type "double3" -52.831517750671495 2710.8165894331505 211.66720821002082 ;
 createNode mesh -n "Recta1" -p "|Recta1";
 	rename -uid "253B57BE-44C9-428D-D92C-BDA8A47E8E87";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".csh" no;
 	setAttr ".rcsh" no;
@@ -90,6 +97,13 @@ createNode transform -n "Recta2";
 	setAttr ".s" -type "double3" -51.918775436138873 39.714302095151425 211.66720821002082 ;
 createNode mesh -n "Recta2" -p "|Recta2";
 	rename -uid "1961849D-475F-EE72-8DA6-8B9D815112A9";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".csh" no;
 	setAttr ".rcsh" no;
@@ -407,6 +421,13 @@ createNode transform -n "Recta3";
 	setAttr ".s" -type "double3" -51.356020269862249 39.714302095151425 211.66720821002082 ;
 createNode mesh -n "Recta3" -p "|Recta3";
 	rename -uid "475856B6-46A4-F546-1856-7E816708A166";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".csh" no;
 	setAttr ".rcsh" no;
@@ -722,6 +743,13 @@ createNode transform -n "Tunel1";
 	setAttr ".s" -type "double3" -51.764442596023294 39.714302095151425 211.66720821002082 ;
 createNode mesh -n "Tunel1" -p "|Tunel1";
 	rename -uid "7D61BAA3-43EA-26F9-9667-2FBA7BD5F689";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".csh" no;
 	setAttr ".rcsh" no;
@@ -1044,6 +1072,13 @@ createNode transform -n "TunnelExit" -p "TunnelExitGroup";
 	setAttr ".s" -type "double3" 50.521155773750074 35.227376419901454 25.902459259400395 ;
 createNode mesh -n "TunnelExitShape" -p "TunnelExit";
 	rename -uid "B3CC1545-4F32-0F7E-85DF-A99E54328426";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".pv" -type "double2" 0.15000000223517418 0.40000000596046448 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -1280,6 +1315,13 @@ createNode transform -n "TunnelExitBack" -p "TunnelExitGroup";
 	setAttr ".s" -type "double3" 50.521155773750074 35.227376419901454 25.902459259400395 ;
 createNode mesh -n "TunnelExitBackShape" -p "TunnelExitBack";
 	rename -uid "F66E12B6-4FC0-16F7-2DD7-1D98F3C04FAF";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".pv" -type "double2" 0.20000000670552254 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -1296,6 +1338,13 @@ createNode transform -n "TunnelEntrance" -p "TunnelEntranceGroup";
 	setAttr ".s" -type "double3" 51.430863523982822 43.741100671355873 26.173939116223352 ;
 createNode mesh -n "TunnelEntranceShape" -p "TunnelEntrance";
 	rename -uid "CC17BCE0-4F4F-EE28-1387-3D9E284E9C1B";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".csh" no;
 	setAttr ".rcsh" no;
@@ -1312,6 +1361,13 @@ createNode transform -n "TunnelEntranceBack" -p "TunnelEntranceGroup";
 	setAttr ".s" -type "double3" 51.430863523982822 43.741100671355873 26.173939116223352 ;
 createNode mesh -n "TunnelEntranceBackShape" -p "TunnelEntranceBack";
 	rename -uid "EA03DBC1-48B4-09D5-0CA9-9EA075B9DC22";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".pv" -type "double2" 0.50000001490116119 0.90000000596046448 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -1593,6 +1649,13 @@ createNode transform -n "TunnelWall1Back" -p "TunnelWall1Group";
 	setAttr ".s" -type "double3" 273.64572040877533 43.741100671355873 26.173939116223352 ;
 createNode mesh -n "TunnelWall1BackShape" -p "TunnelWall1Back";
 	rename -uid "81CF732E-4163-C3E7-BCB7-50A90C4DE7F7";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".csh" no;
 	setAttr ".rcsh" no;
@@ -1911,6 +1974,13 @@ createNode transform -n "TunnelWal1" -p "TunnelWall1Group";
 	setAttr ".s" -type "double3" 273.64572040877533 43.741100671355873 26.173939116223352 ;
 createNode mesh -n "TunnelWal1Shape" -p "TunnelWal1";
 	rename -uid "21014CB5-43A7-8D62-3AB7-D495A6064CAD";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".pv" -type "double2" 0.65000000596046448 0.35000000894069672 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -2218,6 +2288,13 @@ createNode transform -n "TunnelWall2" -p "TunnelWall2Group";
 	setAttr ".s" -type "double3" 273.64572040877533 43.741100671355873 26.173939116223352 ;
 createNode mesh -n "TunnelWall2Shape" -p "TunnelWall2";
 	rename -uid "734F5DAF-47C3-7BEC-5652-6180B71B34D5";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".pv" -type "double2" 0.65000000596046448 0.35000000894069672 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -2532,6 +2609,13 @@ createNode transform -n "TunnelWal2Back" -p "TunnelWall2Group";
 	setAttr ".s" -type "double3" 273.64572040877533 43.741100671355873 26.173939116223352 ;
 createNode mesh -n "TunnelWal2BackShape" -p "TunnelWal2Back";
 	rename -uid "54306F6C-492C-5791-2460-53B19AF191F8";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".csh" no;
 	setAttr ".rcsh" no;
@@ -2855,6 +2939,13 @@ createNode transform -n "TunnelCeiling1" -p "TunnelCeiling1Group";
 	setAttr ".s" -type "double3" 173.31661690873557 43.741100671355873 51.461919203024408 ;
 createNode mesh -n "TunnelCeiling1Shape" -p "TunnelCeiling1";
 	rename -uid "050A7A41-418D-D89B-F932-F1B7BD71FB6A";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -3172,6 +3263,13 @@ createNode transform -n "TunnelCeiling1Back" -p "TunnelCeiling1Group";
 	setAttr ".s" -type "double3" 173.31661690873557 43.741100671355873 51.461919203024408 ;
 createNode mesh -n "TunnelCeiling1BackShape" -p "TunnelCeiling1Back";
 	rename -uid "1BE734D0-4912-8B01-0063-718B96B38C40";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".rcsh" no;
 	setAttr ".pv" -type "double2" 0.65000000596046448 0.35000000894069672 ;
@@ -3492,6 +3590,13 @@ createNode transform -n "TunnelCeiling2" -p "TunnelCeiling2Group";
 	setAttr ".s" -type "double3" 101.21564563924744 43.741100671355873 51.037862513588095 ;
 createNode mesh -n "TunnelCeiling2Shape" -p "TunnelCeiling2";
 	rename -uid "D03EF7D2-473E-34A9-F9A1-37BC640A44F7";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".pv" -type "double2" 0.65000000596046448 0.35000000894069672 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -4097,6 +4202,13 @@ createNode transform -n "TunnelCeiling2Back" -p "TunnelCeiling2Group";
 	setAttr ".s" -type "double3" 101.21564563924744 43.741100671355873 51.037862513588095 ;
 createNode mesh -n "TunnelCeiling2BackShape" -p "TunnelCeiling2Back";
 	rename -uid "76ECCBC5-499C-B156-557A-8DA85156E0D9";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".rcsh" no;
 	setAttr ".pv" -type "double2" 0.65000000596046448 0.35000000894069672 ;
@@ -4718,6 +4830,13 @@ createNode transform -n "TunnelDiv1" -p "TunnelDivision1Group";
 	setAttr ".s" -type "double3" 101.21564563924744 43.741100671355873 51.755511456235951 ;
 createNode mesh -n "TunnelDiv1Shape" -p "TunnelDiv1";
 	rename -uid "C2E920C6-463B-1AB3-96BA-24ABE3D0BAC8";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -5325,6 +5444,13 @@ createNode transform -n "TunnelDiv1Back" -p "TunnelDivision1Group";
 	setAttr ".s" -type "double3" 101.21564563924744 43.741100671355873 51.755511456235951 ;
 createNode mesh -n "TunnelDiv1BackShape" -p "TunnelDiv1Back";
 	rename -uid "6C9FA4A4-42BC-D451-BFC5-BEBFC9AFF5DF";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".pv" -type "double2" 0.65000000596046448 0.35000000894069672 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -5944,6 +6070,13 @@ createNode transform -n "TunnelDiv2" -p "TunnelDivision2Group";
 	setAttr ".s" -type "double3" 95.245754533388492 43.741100671355873 50.75738216271823 ;
 createNode mesh -n "TunnelDiv2Shape" -p "TunnelDiv2";
 	rename -uid "D484F5FB-4631-9D2F-6546-F2BD463DADEC";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -6551,6 +6684,13 @@ createNode transform -n "TunnelDiv2Back" -p "TunnelDivision2Group";
 	setAttr ".s" -type "double3" 100.72162652169978 43.741100671355873 50.75738216271823 ;
 createNode mesh -n "TunnelDiv2BackShape" -p "TunnelDiv2Back";
 	rename -uid "FBC772A0-417B-2283-68B9-A99A6FFCA6C3";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".pv" -type "double2" 0.65000000596046448 0.35000000894069672 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -7170,6 +7310,13 @@ createNode transform -n "TunnelExit2Back" -p "TunnelExit2Group";
 	setAttr ".s" -type "double3" 51.22013714095641 35.227376419901454 25.902459259400395 ;
 createNode mesh -n "TunnelExit2BackShape" -p "TunnelExit2Back";
 	rename -uid "A18BE15A-4DD5-2478-9E87-3DA69A426BB1";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".csh" no;
 	setAttr ".rcsh" no;
@@ -7410,6 +7557,13 @@ createNode transform -n "TunnelExit2" -p "TunnelExit2Group";
 	setAttr ".s" -type "double3" 51.22013714095641 35.227376419901454 25.902459259400395 ;
 createNode mesh -n "TunnelExit2Shape" -p "TunnelExit2";
 	rename -uid "A00D909D-4359-BAF1-8276-2ABBCE585C25";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".pv" -type "double2" 0.20000000670552254 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -7657,6 +7811,13 @@ createNode transform -n "Curva1" -p "Curva1BendHandler";
 	setAttr ".s" -type "double3" 0.48708674998757273 0.37525228807048883 -2.0000000000000004 ;
 createNode mesh -n "Curva1" -p "|Curva1BendHandler|Curva1";
 	rename -uid "3B8D80E0-4520-E1E2-2C3E-D5B75FA7D235";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".csh" no;
@@ -7986,6 +8147,13 @@ createNode transform -n "Curva3" -p "Curva2Handle";
 	setAttr ".s" -type "double3" 0.48792538910188926 0.37525228807048877 -2 ;
 createNode mesh -n "Curva2" -p "Curva3";
 	rename -uid "26F289CD-4A16-E8E0-EBAD-06B0BEE4DF8D";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".csh" no;
@@ -8305,6 +8473,13 @@ createNode transform -n "Wall1Right" -p "Wall1";
 	setAttr ".s" -type "double3" -25.907639437570072 2710.8165894331505 211.66720821002082 ;
 createNode mesh -n "Wall1Right" -p "|Wall1|Wall1Right";
 	rename -uid "A9BA9DDC-4429-5B55-A463-DB8E4A064AC8";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".csh" no;
 	setAttr ".rcsh" no;
@@ -8621,6 +8796,13 @@ createNode transform -n "Wall1Right1" -p "Wall1";
 	setAttr ".s" -type "double3" -25.907639437570072 2710.8165894331505 211.66720821002082 ;
 createNode mesh -n "Wall1Right1" -p "|Wall1|Wall1Right1";
 	rename -uid "DC26B4D0-47A4-9CC7-CF79-BC9D790DC966";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".csh" no;
 	setAttr ".rcsh" no;
@@ -8939,6 +9121,13 @@ createNode transform -n "Wall2Left" -p "Wall2";
 	setAttr ".s" -type "double3" -25.907639437570072 39.714302095151425 211.66720821002082 ;
 createNode mesh -n "Wall2Left" -p "|Wall2|Wall2Left";
 	rename -uid "328BA337-424A-1886-F3E6-5EB3F2914337";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".csh" no;
 	setAttr ".rcsh" no;
@@ -9261,6 +9450,13 @@ createNode transform -n "Wall2Right" -p "Wall2";
 	setAttr ".s" -type "double3" -25.907639437570072 39.714302095151425 211.66720821002082 ;
 createNode mesh -n "Wall2Right" -p "|Wall2|Wall2Right";
 	rename -uid "FD553B92-4C44-B70D-402C-64A22494183F";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".csh" no;
 	setAttr ".rcsh" no;
@@ -9585,6 +9781,13 @@ createNode transform -n "Wall3Left" -p "Wall3";
 	setAttr ".s" -type "double3" -25.907639437570072 39.714302095151425 211.66720821002082 ;
 createNode mesh -n "Wall3Left" -p "|Wall3|Wall3Left";
 	rename -uid "F1EC50AA-4F6E-1B12-14E0-CAA12EB4AE01";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".csh" no;
 	setAttr ".rcsh" no;
@@ -9901,6 +10104,13 @@ createNode transform -n "Wall3Right" -p "Wall3";
 	setAttr ".s" -type "double3" -25.907639437570072 39.714302095151425 211.66720821002082 ;
 createNode mesh -n "Wall3Right" -p "|Wall3|Wall3Right";
 	rename -uid "AA096427-488D-71FC-BF4B-CFB1B594A3CF";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".csh" no;
 	setAttr ".rcsh" no;
@@ -10228,6 +10438,13 @@ createNode transform -n "WallCurva1Right" -p "bend4Handle";
 	setAttr ".s" -type "double3" 0.23777105522535183 0.39935638983964178 -2.2707168355779066 ;
 createNode mesh -n "WallCurva1Right" -p "|bend4Handle|WallCurva1Right";
 	rename -uid "8BB2249C-4352-DB84-D3A5-16B095097FDC";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".csh" no;
@@ -10556,6 +10773,13 @@ createNode transform -n "WallCurva2Left" -p "bend5Handle";
 	setAttr ".s" -type "double3" 0.24479596680713953 0.37525228807048877 -3.0166874045750487 ;
 createNode mesh -n "WallCurva2Left" -p "|bend5Handle|WallCurva2Left";
 	rename -uid "A851216C-4ACC-916C-BE19-D5A5591AADE3";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
@@ -10882,6 +11106,13 @@ createNode transform -n "Wall4Left" -p "bend6Handle";
 	setAttr ".s" -type "double3" 0.24479596680713961 0.37525228807048883 -2.0000000000000009 ;
 createNode mesh -n "Wall4LeftLeft" -p "Wall4Left";
 	rename -uid "33811864-4CF7-7AED-E409-8AB615929FBA";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".csh" no;
@@ -11204,6 +11435,13 @@ createNode transform -n "Sawblade1" -p "SawbladeGroup";
 	setAttr ".s" -type "double3" -11.843591923727056 -11.843591923727056 -11.843591923727056 ;
 createNode mesh -n "Sawblade1Shape" -p "Sawblade1";
 	rename -uid "104AAD65-4CC9-231D-07FF-99ABED6AB809";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".vir" yes;
@@ -11493,6 +11731,13 @@ createNode transform -n "Sawblade2" -p "SawbladeGroup";
 	setAttr ".s" -type "double3" -11.843591923727056 -11.843591923727056 -11.843591923727056 ;
 createNode mesh -n "Sawblade2Shape" -p "Sawblade2";
 	rename -uid "DCD60BFB-4065-7488-032E-9185DB3BF3A1";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".vir" yes;
@@ -11782,6 +12027,13 @@ createNode transform -n "Sawblade3" -p "SawbladeGroup";
 	setAttr ".s" -type "double3" -11.843591923727056 -11.843591923727056 -11.843591923727056 ;
 createNode mesh -n "Sawblade3Shape" -p "Sawblade3";
 	rename -uid "B27C93B2-402F-B7DE-32D6-34936F304571";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".vir" yes;
@@ -12073,6 +12325,13 @@ createNode transform -n "Sawblade10" -p "SawbladeWall";
 	setAttr ".s" -type "double3" -4.3203493011463685 -4.3203493011463685 -4.3203493011463685 ;
 createNode mesh -n "Sawblade10Shape" -p "Sawblade10";
 	rename -uid "A9D18D50-4576-CC8F-9C8D-299A3463CB94";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".vir" yes;
@@ -12362,6 +12621,13 @@ createNode transform -n "Sawblade9" -p "SawbladeWall";
 	setAttr ".s" -type "double3" -4.3203493011463685 -4.3203493011463685 -4.3203493011463685 ;
 createNode mesh -n "Sawblade9Shape" -p "Sawblade9";
 	rename -uid "E818BDEB-4E4D-3F10-C3D0-9C8C540FD76A";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".vir" yes;
@@ -12650,6 +12916,13 @@ createNode transform -n "pCube1" -p "SawbladeWall";
 	setAttr ".s" -type "double3" 48.697514707016133 26.41053332142333 1.6877570774336534 ;
 createNode mesh -n "pCubeShape1" -p "pCube1";
 	rename -uid "67883F0C-46D0-DE22-CD68-CB874F64D407";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -12665,6 +12938,13 @@ createNode transform -n "Sawblade7" -p "SawbladeWall";
 	setAttr ".s" -type "double3" -4.3203493011463685 -4.3203493011463685 -4.3203493011463685 ;
 createNode mesh -n "Sawblade7Shape" -p "Sawblade7";
 	rename -uid "3C671230-45FB-9FD3-F704-F6B90EC3AF24";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".vir" yes;
@@ -12954,6 +13234,13 @@ createNode transform -n "Sawblade4" -p "SawbladeWall";
 	setAttr ".s" -type "double3" -4.3203493011463685 -4.3203493011463685 -4.3203493011463685 ;
 createNode mesh -n "Sawblade4Shape" -p "Sawblade4";
 	rename -uid "E705EBD5-435B-0C51-0B6F-99B9AB09E572";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".vir" yes;
@@ -13243,6 +13530,13 @@ createNode transform -n "Sawblade5" -p "SawbladeWall";
 	setAttr ".s" -type "double3" -4.3203493011463685 -4.3203493011463685 -4.3203493011463685 ;
 createNode mesh -n "Sawblade5Shape" -p "Sawblade5";
 	rename -uid "32FD8C53-42C6-47D5-7769-7B9E46040380";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".vir" yes;
@@ -13559,6 +13853,13 @@ createNode transform -n "WallCurva4Right1";
 	setAttr ".s" -type "double3" -25.907639437570072 39.714302095151425 255.51906536807945 ;
 createNode mesh -n "WallCurva4Right1" -p "|WallCurva4Right1";
 	rename -uid "B0DF2F5F-4BBF-90CC-5718-A3AE43D0DA13";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".csh" no;
@@ -13890,6 +14191,13 @@ createNode transform -n "CurvaSalidaTunel" -p "bend8Handle";
 	setAttr ".s" -type "double3" 0.37766371271771637 0.57892772567683326 -1.614496479229556 ;
 createNode mesh -n "CurvaSalidaTunel" -p "|bend8Handle|CurvaSalidaTunel";
 	rename -uid "AFDD87DF-40B4-8276-CF15-2DA0C5153CFC";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".csh" no;
@@ -14221,6 +14529,13 @@ createNode transform -n "Wall2Left1" -p "bend9Handle";
 	setAttr ".s" -type "double3" 0.24479596680713944 0.3752522880704886 -1.3543799564452221 ;
 createNode mesh -n "Wall2Left1" -p "|bend9Handle|Wall2Left1";
 	rename -uid "7F7A74C0-4D1D-EB95-442D-F2B276357359";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".csh" no;
@@ -14544,6 +14859,13 @@ createNode transform -n "Sawblade11" -p "SawbladeCylinder1";
 	setAttr ".s" -type "double3" -4.3203493011463685 -4.3203493011463685 -4.3203493011463685 ;
 createNode mesh -n "Sawblade11Shape" -p "|SawbladeCylinder1|Sawblade11";
 	rename -uid "8C613F77-4A69-1AB5-D712-818362647C27";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".vir" yes;
@@ -14833,6 +15155,13 @@ createNode transform -n "Sawblade13" -p "SawbladeCylinder1";
 	setAttr ".s" -type "double3" -4.3203493011463685 -4.3203493011463685 -4.3203493011463685 ;
 createNode mesh -n "Sawblade13Shape" -p "|SawbladeCylinder1|Sawblade13";
 	rename -uid "03768955-428E-3FD0-A79D-669B48B9E3A0";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".vir" yes;
@@ -15122,6 +15451,13 @@ createNode transform -n "Sawblade12" -p "SawbladeCylinder1";
 	setAttr ".s" -type "double3" -4.3203493011463685 -4.3203493011463685 -4.3203493011463685 ;
 createNode mesh -n "Sawblade12Shape" -p "|SawbladeCylinder1|Sawblade12";
 	rename -uid "09974EF6-4764-6E4F-FAB3-439804893B61";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".vir" yes;
@@ -15411,6 +15747,13 @@ createNode transform -n "pCylinder1" -p "SawbladeCylinder1";
 	setAttr ".s" -type "double3" 1 26.387762358799531 1 ;
 createNode mesh -n "pCylinderShape1" -p "|SawbladeCylinder1|pCylinder1";
 	rename -uid "C5A12019-47E6-A4CC-FFEC-D1ADB0821424";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -15429,6 +15772,13 @@ createNode transform -n "Sawblade11" -p "SawbladeCylinder2";
 	setAttr ".s" -type "double3" -4.3203493011463685 -4.3203493011463685 -4.3203493011463685 ;
 createNode mesh -n "Sawblade11Shape" -p "|SawbladeCylinder2|Sawblade11";
 	rename -uid "218D2DE3-49E0-0BBD-CCEF-B0A44694C3A5";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".vir" yes;
@@ -15718,6 +16068,13 @@ createNode transform -n "Sawblade13" -p "SawbladeCylinder2";
 	setAttr ".s" -type "double3" -4.3203493011463685 -4.3203493011463685 -4.3203493011463685 ;
 createNode mesh -n "Sawblade13Shape" -p "|SawbladeCylinder2|Sawblade13";
 	rename -uid "C4093AE6-4F81-723F-FF14-C0886036C4A3";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".vir" yes;
@@ -16007,6 +16364,13 @@ createNode transform -n "Sawblade12" -p "SawbladeCylinder2";
 	setAttr ".s" -type "double3" -4.3203493011463685 -4.3203493011463685 -4.3203493011463685 ;
 createNode mesh -n "Sawblade12Shape" -p "|SawbladeCylinder2|Sawblade12";
 	rename -uid "B9067F48-4771-A7CC-DD4D-E396CF0727FC";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".vir" yes;
@@ -16296,6 +16660,13 @@ createNode transform -n "pCylinder1" -p "SawbladeCylinder2";
 	setAttr ".s" -type "double3" 1 28.04829651261759 1 ;
 createNode mesh -n "pCylinderShape1" -p "|SawbladeCylinder2|pCylinder1";
 	rename -uid "BCB41B46-4973-C104-1439-5DA01B2FD678";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -16490,6 +16861,13 @@ createNode transform -n "Propellor1" -p "PropellorGroup";
 	setAttr ".s" -type "double3" 0.84689713939464661 0.84689713939464661 0.84689713939464661 ;
 createNode mesh -n "Propellor1Shape" -p "Propellor1";
 	rename -uid "81FFF740-470E-94BE-5673-55984E0E554C";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -17058,6 +17436,13 @@ createNode transform -n "Propellor2" -p "PropellorGroup";
 	setAttr ".s" -type "double3" 0.84689713939464661 0.84689713939464661 0.84689713939464661 ;
 createNode mesh -n "Propellor2Shape" -p "Propellor2";
 	rename -uid "7B5A9B7E-47CE-A1FE-6620-7D9EDE511C16";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -17626,6 +18011,13 @@ createNode transform -n "Propellor3" -p "PropellorGroup";
 	setAttr ".s" -type "double3" 0.84689713939464661 0.84689713939464661 0.84689713939464661 ;
 createNode mesh -n "Propellor3Shape" -p "Propellor3";
 	rename -uid "73C2983C-4219-E11A-79D5-50BB1CE75411";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -18196,6 +18588,13 @@ createNode transform -n "StartFlag" -p "FlagGroup";
 	setAttr ".s" -type "double3" 52.87366127909808 300.87204607919853 4.4078686018644353 ;
 createNode mesh -n "StartFlagShape" -p "StartFlag";
 	rename -uid "0FB4C4DA-4F9E-FB2D-A1E9-5AA8FCC07DA4";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -18512,6 +18911,13 @@ createNode transform -n "EndFlag" -p "FlagGroup";
 	setAttr ".s" -type "double3" 53.116475196229224 4.4078686018644353 4.4078686018644353 ;
 createNode mesh -n "EndFlagShape" -p "EndFlag";
 	rename -uid "DFFF2415-408A-F713-0D3C-2391E7CE5AAE";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -18535,6 +18941,13 @@ createNode transform -n "Spike1" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow1";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape1" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow1|Spike1";
 	rename -uid "592DA9AA-44D2-4F85-A485-BE89C559A600";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -18550,6 +18963,13 @@ createNode transform -n "Spike2" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow1";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape2" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow1|Spike2";
 	rename -uid "A9230D16-4FEC-123A-68DC-90A465334C34";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -18586,6 +19006,13 @@ createNode transform -n "Spike3" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow1";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape3" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow1|Spike3";
 	rename -uid "B31DE86D-4586-A0EF-3DA2-C397991F6FC5";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -18622,6 +19049,13 @@ createNode transform -n "Spike4" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow1";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape4" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow1|Spike4";
 	rename -uid "3B3322CC-468B-3CA7-A3C6-789B8CE40DEA";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -18658,6 +19092,13 @@ createNode transform -n "Spike5" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow1";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape5" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow1|Spike5";
 	rename -uid "53080E73-4F76-12F9-7555-A29459012BC3";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -18694,6 +19135,13 @@ createNode transform -n "Spike6" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow1";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape6" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow1|Spike6";
 	rename -uid "26AA16C5-42EE-5590-6842-76A50D3C9E01";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -18733,6 +19181,13 @@ createNode transform -n "Spike1" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow2";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape1" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow2|Spike1";
 	rename -uid "C50B3F38-4994-0C47-9136-DFB14D67ADD0";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -18769,6 +19224,13 @@ createNode transform -n "Spike2" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow2";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape2" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow2|Spike2";
 	rename -uid "A1C7A2E7-4A48-70F9-BB11-CD82E8A5F826";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -18805,6 +19267,13 @@ createNode transform -n "Spike3" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow2";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape3" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow2|Spike3";
 	rename -uid "63FA5962-46DB-EE53-93A7-8F8E09E22B8A";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -18841,6 +19310,13 @@ createNode transform -n "Spike4" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow2";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape4" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow2|Spike4";
 	rename -uid "D4767B0F-49AC-0850-59BC-B78C7846399D";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -18880,6 +19356,13 @@ createNode transform -n "Spike1" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow3";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape1" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow3|Spike1";
 	rename -uid "2A017D0C-4C19-A835-C7D7-EF98A8CF7B56";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -18916,6 +19399,13 @@ createNode transform -n "Spike2" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow3";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape2" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow3|Spike2";
 	rename -uid "F766510A-4221-FD95-80A4-00B61A8D1369";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -18958,6 +19448,13 @@ createNode transform -n "Spike7" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow5";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape7" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow5|Spike7";
 	rename -uid "2D8AF580-4403-379C-B024-A19A28B3D211";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -18994,6 +19491,13 @@ createNode transform -n "Spike8" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow5";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape8" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow5|Spike8";
 	rename -uid "89270332-46B6-D7FC-03AC-32A853A893A1";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19030,6 +19534,13 @@ createNode transform -n "Spike9" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow5";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape9" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow5|Spike9";
 	rename -uid "5C74ABBA-476B-2670-704E-A994A336D242";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19069,6 +19580,13 @@ createNode transform -n "Spike5" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow6";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape5" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow6|Spike5";
 	rename -uid "DD93577C-44B1-3165-542D-71A97FC7A9A5";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19105,6 +19623,13 @@ createNode transform -n "Spike6" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow6";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape6" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow6|Spike6";
 	rename -uid "A64EE58E-4735-1947-7CBC-719E01F3B8C3";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19141,6 +19666,13 @@ createNode transform -n "Spike7" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow6";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape7" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow6|Spike7";
 	rename -uid "A66BD662-42A4-3723-5A65-A5858A30D24A";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19177,6 +19709,13 @@ createNode transform -n "Spike8" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow6";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape8" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow6|Spike8";
 	rename -uid "02A784D4-4ADF-F34C-4AB0-B5988653DF23";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19213,6 +19752,13 @@ createNode transform -n "Spike9" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow6";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape9" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow6|Spike9";
 	rename -uid "FDCD626D-43D4-6132-7360-62B87E1B8371";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19252,6 +19798,13 @@ createNode transform -n "Spike3" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow7";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape3" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow7|Spike3";
 	rename -uid "02E0AC90-414B-5491-5C9F-EDB30714C099";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19288,6 +19841,13 @@ createNode transform -n "Spike4" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow7";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape4" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow7|Spike4";
 	rename -uid "2E7376DF-45E9-482B-41E3-5B8D257CFC4C";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19324,6 +19884,13 @@ createNode transform -n "Spike5" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow7";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape5" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow7|Spike5";
 	rename -uid "279CBE4A-46FB-4331-E0DF-2F9E4B24BE1A";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19360,6 +19927,13 @@ createNode transform -n "Spike6" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow7";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape6" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow7|Spike6";
 	rename -uid "265DCECB-445F-9774-0961-DB8AA1C557D7";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19396,6 +19970,13 @@ createNode transform -n "Spike7" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow7";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape7" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow7|Spike7";
 	rename -uid "389D7F69-485B-EC04-7330-B295EE5D98BD";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19432,6 +20013,13 @@ createNode transform -n "Spike8" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow7";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape8" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow7|Spike8";
 	rename -uid "7FA9E26E-4B64-B355-AA6A-3DB21281249A";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19468,6 +20056,13 @@ createNode transform -n "Spike9" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow7";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape9" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow7|Spike9";
 	rename -uid "BD64A6CF-4B34-A390-1867-8FB410F37A03";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19507,6 +20102,13 @@ createNode transform -n "Spike1" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow8";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape1" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow8|Spike1";
 	rename -uid "2155E95D-4BF0-E328-C065-62B770009B24";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19543,6 +20145,13 @@ createNode transform -n "Spike2" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow8";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape2" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow8|Spike2";
 	rename -uid "AFF3AAE6-44CA-649B-D4BB-4AAE25E32E5B";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19579,6 +20188,13 @@ createNode transform -n "Spike3" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow8";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape3" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow8|Spike3";
 	rename -uid "0821B279-4838-CF2A-CF3C-189480E0F070";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19615,6 +20231,13 @@ createNode transform -n "Spike4" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow8";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape4" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow8|Spike4";
 	rename -uid "00F5B332-45EC-E152-F805-4DA94CB52184";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19651,6 +20274,13 @@ createNode transform -n "Spike5" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow8";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape5" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow8|Spike5";
 	rename -uid "3A8BF77B-4829-9BD2-9F49-828E1B5D6693";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19687,6 +20317,13 @@ createNode transform -n "Spike6" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow8";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape6" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow8|Spike6";
 	rename -uid "1F03FEF8-4059-7E89-7596-C280A3848693";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19723,6 +20360,13 @@ createNode transform -n "Spike7" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow8";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape7" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow8|Spike7";
 	rename -uid "234C1B4B-4EC9-40F7-D30A-2FA02FDEF4A6";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19759,6 +20403,13 @@ createNode transform -n "Spike8" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow8";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape8" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow8|Spike8";
 	rename -uid "D6BF43B7-4477-4EBE-C478-E58E5A4CCBF1";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19795,6 +20446,13 @@ createNode transform -n "Spike9" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow8";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape9" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow8|Spike9";
 	rename -uid "FA562A66-472D-2CF4-00A7-9D9860FA2E74";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19834,6 +20492,13 @@ createNode transform -n "Spike1" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow9";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape1" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow9|Spike1";
 	rename -uid "91BDED8B-40C9-861F-ABC2-88B371DF95EF";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19870,6 +20535,13 @@ createNode transform -n "Spike2" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow9";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape2" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow9|Spike2";
 	rename -uid "A052F3CA-47EF-746F-D167-DEAD2C2F4F47";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19906,6 +20578,13 @@ createNode transform -n "Spike3" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow9";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape3" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow9|Spike3";
 	rename -uid "4C67C122-4CE9-14E0-BA93-56BD146D9678";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19942,6 +20621,13 @@ createNode transform -n "Spike4" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow9";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape4" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow9|Spike4";
 	rename -uid "33CADC5A-4F4F-DE87-39BA-D2BB488279E2";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -19978,6 +20664,13 @@ createNode transform -n "Spike5" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow9";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape5" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow9|Spike5";
 	rename -uid "36391F8B-43C3-B3EA-F95A-539DC92384E3";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20014,6 +20707,13 @@ createNode transform -n "Spike6" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow9";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape6" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow9|Spike6";
 	rename -uid "567BD67B-4C76-695C-6566-5C887EA4090D";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20050,6 +20750,13 @@ createNode transform -n "Spike7" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow9";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape7" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow9|Spike7";
 	rename -uid "6BD5746D-48AC-D10D-1D7C-E7BF27544EF7";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20086,6 +20793,13 @@ createNode transform -n "Spike8" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow9";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape8" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow9|Spike8";
 	rename -uid "2E863A36-4AD4-A4AD-C0D8-8C845E8AFDE4";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20122,6 +20836,13 @@ createNode transform -n "Spike9" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow9";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape9" -p "|SpikeCubeTrap|SpikeSurface1|SpikeRow9|Spike9";
 	rename -uid "8E07CDDC-4ADF-F7CF-1521-7B8C350F6F2B";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20158,6 +20879,13 @@ createNode transform -n "Cube1" -p "SpikeCubeTrap";
 	setAttr ".s" -type "double3" 26.617995031563627 35.707402037346995 27.201625797608489 ;
 createNode mesh -n "CubeShape1" -p "|SpikeCubeTrap|Cube1";
 	rename -uid "B9AA8371-4E79-A378-F092-9A90546D2DFC";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20186,6 +20914,13 @@ createNode transform -n "Spike1" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape1" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1|Spike1";
 	rename -uid "E43FD09C-4C12-BEA9-C9DC-948D4FFD759D";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20222,6 +20957,13 @@ createNode transform -n "Spike2" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape2" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1|Spike2";
 	rename -uid "BD5841D2-4AE5-9C29-D8B0-4A910538644A";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20258,6 +21000,13 @@ createNode transform -n "Spike3" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape3" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1|Spike3";
 	rename -uid "C850EB85-40D7-807D-2508-D1B7EB197D18";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20294,6 +21043,13 @@ createNode transform -n "Spike4" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape4" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1|Spike4";
 	rename -uid "599B3983-434E-45A8-FE52-64977C046EA6";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20330,6 +21086,13 @@ createNode transform -n "Spike5" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape5" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1|Spike5";
 	rename -uid "2B13D3B9-4BA1-086A-63F3-3792B4E2BF06";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20366,6 +21129,13 @@ createNode transform -n "Spike6" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape6" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1|Spike6";
 	rename -uid "817636E6-4114-9DD2-771B-5BBAE55614EF";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20402,6 +21172,13 @@ createNode transform -n "Spike10" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape10" -p "Spike10";
 	rename -uid "6715AA92-41EB-85A7-5AE5-248816173909";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20438,6 +21215,13 @@ createNode transform -n "Spike11" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape11" -p "Spike11";
 	rename -uid "3BE33D6E-443A-963D-5E29-ECA62F0DC061";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20474,6 +21258,13 @@ createNode transform -n "Spike12" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape12" -p "Spike12";
 	rename -uid "EF4DC6E9-4F94-CFA9-69C9-FE9EE3650F84";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20513,6 +21304,13 @@ createNode transform -n "Spike1" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape1" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2|Spike1";
 	rename -uid "2A51E45B-4746-68A2-77AB-E08F2ED16892";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20549,6 +21347,13 @@ createNode transform -n "Spike2" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape2" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2|Spike2";
 	rename -uid "7D9E4676-41AB-1E2C-CABA-EE827A6775D1";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20585,6 +21390,13 @@ createNode transform -n "Spike3" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape3" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2|Spike3";
 	rename -uid "1F901E3C-4BA9-A759-FC6C-AFBF9D331910";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20621,6 +21433,13 @@ createNode transform -n "Spike4" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape4" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2|Spike4";
 	rename -uid "4BEF8F55-4EF2-7497-2F1E-F48B8FA3FF14";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20657,6 +21476,13 @@ createNode transform -n "Spike5" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape5" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2|Spike5";
 	rename -uid "BE789992-4190-D098-79A9-E78C37B87ACE";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20693,6 +21519,13 @@ createNode transform -n "Spike6" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape6" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2|Spike6";
 	rename -uid "742660C4-4D78-2830-EE77-1FBA7A8F5618";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20729,6 +21562,13 @@ createNode transform -n "Spike13" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2";
 	setAttr ".s" -type "double3" 3.0000000000000004 7.6352036939770569 3 ;
 createNode mesh -n "SpikeShape13" -p "Spike13";
 	rename -uid "6F8E7AD3-4D90-EB26-E587-6491DA912B5B";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20765,6 +21605,13 @@ createNode transform -n "Spike14" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2";
 	setAttr ".s" -type "double3" 3.0000000000000004 7.6352036939770569 3 ;
 createNode mesh -n "SpikeShape14" -p "Spike14";
 	rename -uid "28BFD8A3-4AD6-BC3A-3976-C888BC261E11";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20801,6 +21648,13 @@ createNode transform -n "Spike15" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2";
 	setAttr ".s" -type "double3" 3.0000000000000004 7.6352036939770569 3 ;
 createNode mesh -n "SpikeShape15" -p "Spike15";
 	rename -uid "A716548A-4D51-A0CF-DDB6-E49D2B84A0AF";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20840,6 +21694,13 @@ createNode transform -n "Spike1" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape1" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3|Spike1";
 	rename -uid "8D8F0706-4839-A113-8F25-5FA4A5C06383";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20876,6 +21737,13 @@ createNode transform -n "Spike2" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape2" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3|Spike2";
 	rename -uid "C8D8D050-4967-1B9E-F447-C0B4C8F3CE51";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20912,6 +21780,13 @@ createNode transform -n "Spike3" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape3" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3|Spike3";
 	rename -uid "6D32B4ED-42E0-543A-A6DC-2C8018F76370";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20948,6 +21823,13 @@ createNode transform -n "Spike4" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape4" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3|Spike4";
 	rename -uid "08F2358D-4ECF-5AEE-F9B0-36B6B91109E7";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -20984,6 +21866,13 @@ createNode transform -n "Spike5" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape5" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3|Spike5";
 	rename -uid "790E55C7-4D27-82BE-1DE9-66991CE2A21E";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21020,6 +21909,13 @@ createNode transform -n "Spike6" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape6" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3|Spike6";
 	rename -uid "56CB54AD-45DA-2167-A122-1FA3BC1CEE9D";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21056,6 +21952,13 @@ createNode transform -n "Spike16" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3";
 	setAttr ".s" -type "double3" 3.0000000000000004 7.6352036939770587 3 ;
 createNode mesh -n "SpikeShape16" -p "Spike16";
 	rename -uid "DB1A1EEE-4DDD-6702-79EF-538C6205C080";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21092,6 +21995,13 @@ createNode transform -n "Spike17" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3";
 	setAttr ".s" -type "double3" 3.0000000000000004 7.6352036939770587 3 ;
 createNode mesh -n "SpikeShape17" -p "Spike17";
 	rename -uid "875B18A3-4F5D-779E-2445-509E5C6930AD";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21128,6 +22038,13 @@ createNode transform -n "Spike18" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3";
 	setAttr ".s" -type "double3" 3.0000000000000004 7.6352036939770587 3 ;
 createNode mesh -n "SpikeShape18" -p "Spike18";
 	rename -uid "8D845966-42FF-2360-0F23-FB8ED71AF71F";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21170,6 +22087,13 @@ createNode transform -n "Spike1" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape1" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5|Spike1";
 	rename -uid "E4A8639B-4A9F-71D6-18B9-31875B7EEA2A";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21206,6 +22130,13 @@ createNode transform -n "Spike2" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape2" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5|Spike2";
 	rename -uid "1E02A4C9-45BB-56CC-27D8-3D9D7B91175C";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21242,6 +22173,13 @@ createNode transform -n "Spike3" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape3" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5|Spike3";
 	rename -uid "B75EDDCC-41BE-8B0F-CBB1-E780D62FB7AF";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21278,6 +22216,13 @@ createNode transform -n "Spike4" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape4" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5|Spike4";
 	rename -uid "F8F9B9E5-4513-4E9C-14BF-D1A1F13CDE1C";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21314,6 +22259,13 @@ createNode transform -n "Spike5" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape5" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5|Spike5";
 	rename -uid "D85557E9-45FB-76D9-D655-30B65FFB200F";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21350,6 +22302,13 @@ createNode transform -n "Spike6" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape6" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5|Spike6";
 	rename -uid "091AADA2-4A04-3691-FAC4-D08A2D229F97";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21386,6 +22345,13 @@ createNode transform -n "Spike7" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape7" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5|Spike7";
 	rename -uid "404B08E3-4D6A-690A-69E7-199D3964EA0B";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21422,6 +22388,13 @@ createNode transform -n "Spike8" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape8" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5|Spike8";
 	rename -uid "0135325B-4CF5-DB0B-E5BF-76B17B614E8D";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21458,6 +22431,13 @@ createNode transform -n "Spike9" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape9" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5|Spike9";
 	rename -uid "50DEE912-470C-99DB-6B4D-F09A856B849E";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21497,6 +22477,13 @@ createNode transform -n "Spike1" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape1" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6|Spike1";
 	rename -uid "19DD4D66-4AC9-4403-1B72-2BB9A25CC415";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21533,6 +22520,13 @@ createNode transform -n "Spike2" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape2" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6|Spike2";
 	rename -uid "C05D788A-4088-1C1F-CC6B-9187E3B5F3A5";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21569,6 +22563,13 @@ createNode transform -n "Spike3" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape3" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6|Spike3";
 	rename -uid "44D95727-48AC-319E-9AA0-FAA5AEF19A9E";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21605,6 +22606,13 @@ createNode transform -n "Spike4" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape4" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6|Spike4";
 	rename -uid "EF434B3F-4EDB-4364-62B8-AC9189705F62";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21641,6 +22649,13 @@ createNode transform -n "Spike5" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape5" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6|Spike5";
 	rename -uid "50EEC33C-4D78-82EF-CCCF-60BFEC564A11";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21677,6 +22692,13 @@ createNode transform -n "Spike6" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape6" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6|Spike6";
 	rename -uid "7D95E2C9-42F5-EBCB-A4A9-6F860F41B496";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21713,6 +22735,13 @@ createNode transform -n "Spike7" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape7" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6|Spike7";
 	rename -uid "7D62D8FD-400F-B46E-35FF-C798996A66F0";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21749,6 +22778,13 @@ createNode transform -n "Spike8" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape8" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6|Spike8";
 	rename -uid "A5188040-47BD-1E29-962F-89BD9EE2B5B5";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21785,6 +22821,13 @@ createNode transform -n "Spike9" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape9" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6|Spike9";
 	rename -uid "78589460-4D55-65A4-4E46-0A8E5FA096C9";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21830,6 +22873,13 @@ createNode transform -n "Spike1" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape1" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9|Spike1";
 	rename -uid "0CAD9A8F-40F7-348D-D0DC-6D831375A603";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21866,6 +22916,13 @@ createNode transform -n "Spike2" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape2" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9|Spike2";
 	rename -uid "80C3C6A0-48BD-E2B4-0AA2-F29CCF4E89DB";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21902,6 +22959,13 @@ createNode transform -n "Spike3" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape3" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9|Spike3";
 	rename -uid "C5BF542E-4D0E-8FA0-EFC5-B4AF6D770F1E";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21938,6 +23002,13 @@ createNode transform -n "Spike4" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape4" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9|Spike4";
 	rename -uid "1785767B-4FAE-9F25-6AA2-8AA1C7D2B648";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -21974,6 +23045,13 @@ createNode transform -n "Spike5" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape5" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9|Spike5";
 	rename -uid "F997313D-45CB-ADC0-86AB-CBA08FEDE51C";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -22010,6 +23088,13 @@ createNode transform -n "Spike6" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape6" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9|Spike6";
 	rename -uid "652D337B-4081-2F2F-A0AB-539E0FCF93A2";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -22046,6 +23131,13 @@ createNode transform -n "Spike7" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape7" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9|Spike7";
 	rename -uid "51A2B3F1-493C-55D4-7F7C-0CAA128EA7A9";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -22082,6 +23174,13 @@ createNode transform -n "Spike8" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape8" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9|Spike8";
 	rename -uid "943F7D4D-465B-B0E9-5405-808F0592B895";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -22118,6 +23217,13 @@ createNode transform -n "Spike9" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9";
 	setAttr ".s" -type "double3" 3 7.6352036939770551 3 ;
 createNode mesh -n "SpikeShape9" -p "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9|Spike9";
 	rename -uid "1C2C46F7-4424-D6F6-7245-1790BBA1D743";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -22154,6 +23260,13 @@ createNode transform -n "Cube1" -p "SpikeCubeTrap2";
 	setAttr ".s" -type "double3" 26.617995031563627 35.707402037346995 27.201625797608489 ;
 createNode mesh -n "CubeShape1" -p "|SpikeCubeTrap2|Cube1";
 	rename -uid "4674F78A-4E4E-F0C3-C58F-B7A94EEB34DE";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -22215,6 +23328,13 @@ createNode transform -n "Recta4" -p "bend10Handle";
 	setAttr ".s" -type "double3" 0.49056985137370862 0.37525228807048877 -2 ;
 createNode mesh -n "Curva4" -p "Recta4";
 	rename -uid "CEAB8E9A-43CF-3069-1104-6EB15D2FBA14";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".csh" no;
@@ -22848,6 +23968,13 @@ createNode transform -n "pPipe1" -p "PipeGroup";
 	setAttr ".s" -type "double3" 8.2742072643123237 -1.6496388611372754 8.2742072643123237 ;
 createNode mesh -n "pPipeShape1" -p "pPipe1";
 	rename -uid "608F1810-40DD-2706-AEA9-85BBD592DBF5";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -22863,6 +23990,13 @@ createNode transform -n "pPipe2" -p "PipeGroup";
 	setAttr ".s" -type "double3" 8.2742072643123237 -1.6496388611372754 8.2742072643123237 ;
 createNode mesh -n "pPipeShape2" -p "pPipe2";
 	rename -uid "14CEA643-4C04-5159-DB7A-989B778D9D17";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -24857,6 +25991,13 @@ createNode transform -n "pPipe3" -p "PipeGroup";
 	setAttr ".s" -type "double3" 8.2742072643123237 -1.6496388611372754 8.2742072643123237 ;
 createNode mesh -n "pPipeShape3" -p "pPipe3";
 	rename -uid "67BBEB95-4386-0070-7102-3BAB0C4EA38A";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -26851,6 +27992,13 @@ createNode transform -n "pPipe4" -p "PipeGroup";
 	setAttr ".s" -type "double3" 8.2742072643123237 -1.6496388611372754 8.2742072643123237 ;
 createNode mesh -n "pPipeShape4" -p "pPipe4";
 	rename -uid "BA7DDE16-45B1-CBEE-6014-0C952B600EB7";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -31051,6 +32199,13 @@ createNode transform -n "nave:naveFinal";
 	setAttr ".sp" -type "double3" 2.0207975506782532 0.82253142446279526 -0.16690218448638916 ;
 createNode mesh -n "nave:naveFinalShape" -p "nave:naveFinal";
 	rename -uid "79F3704F-4A02-E5F4-D2B7-F0BACBA2094A";
+	addAttr -ci true -sn "ilrBakeResOverride" -ln "ilrBakeResOverride" -min 0 -max 
+		1 -at "bool";
+	addAttr -ci true -sn "ilrBakeResX" -ln "ilrBakeResX" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeResY" -ln "ilrBakeResY" -dv 512 -min 0 -smn 0 -smx 
+		4096 -at "long";
+	addAttr -ci true -sn "ilrBakeScale" -ln "ilrBakeScale" -dv 1 -min 0.01 -at "float";
 	setAttr -k off ".v";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".vir" yes;
@@ -31063,15 +32218,15 @@ createNode mesh -n "nave:naveFinalShape" -p "nave:naveFinal";
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".dr" 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "D65D0624-4E3E-5C20-75BE-3BB0301EFF6A";
+	rename -uid "7DCA8BDA-4948-F722-22A5-9AADE2E025CF";
 	setAttr -s 22 ".lnk";
 	setAttr -s 22 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "7A5567D3-41A4-C265-E069-76AB72EE38D2";
+	rename -uid "B49EA5C7-448A-2DD2-EAC2-619DBA9DC358";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "1C5E0DEB-481A-EAFE-27C2-20BC69F7ED09";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "C8DE62A2-4CA6-4E3A-2E22-3690859920F6";
+	rename -uid "742713FA-438A-BC1B-CFF9-E59003A14E21";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "69A7B77C-4920-D17F-8386-4186CDDD45FE";
 	setAttr ".g" yes;
@@ -31220,10 +32375,10 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n"
 		+ "                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n"
 		+ "                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n"
-		+ "                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"hyperShadePanel\" -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\tif ($useSceneConfig) {\n\t\tscriptedPanel -e -to $panelName;\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n"
-		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n"
-		+ "                -extendToShapes 1\n                -activeTab -1\n                -editorMode \"default\" \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n"
-		+ "                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -activeTab -1\n                -editorMode \"default\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-defaultImage \"\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"vertical2\\\" -ps 1 24 100 -ps 2 76 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Outliner\")) \n\t\t\t\t\t\"outlinerPanel\"\n"
+		+ "                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"hyperShadePanel\" -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n"
+		+ "\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -activeTab -1\n                -editorMode \"default\" \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n"
+		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -activeTab -1\n                -editorMode \"default\" \n"
+		+ "                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-defaultImage \"\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"vertical2\\\" -ps 1 24 100 -ps 2 76 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Outliner\")) \n\t\t\t\t\t\"outlinerPanel\"\n"
 		+ "\t\t\t\t\t\"$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\\\"Outliner\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\noutlinerEditor -e \\n    -docTag \\\"isolOutln_fromSeln\\\" \\n    -showShapes 0\\n    -showReferenceNodes 1\\n    -showReferenceMembers 1\\n    -showAttributes 0\\n    -showConnected 0\\n    -showAnimCurvesOnly 0\\n    -showMuteInfo 0\\n    -organizeByLayer 1\\n    -showAnimLayerWeight 1\\n    -autoExpandLayers 1\\n    -autoExpand 0\\n    -showDagOnly 1\\n    -showAssets 1\\n    -showContainedOnly 1\\n    -showPublishedAsConnected 0\\n    -showContainerContents 1\\n    -ignoreDagHierarchy 0\\n    -expandConnections 0\\n    -showUpstreamCurves 1\\n    -showUnitlessCurves 1\\n    -showCompounds 1\\n    -showLeafs 1\\n    -showNumericAttrsOnly 0\\n    -highlightActive 1\\n    -autoSelectNewObjects 0\\n    -doNotSelectNewObjects 0\\n    -dropIsParent 1\\n    -transmitFilters 0\\n    -setFilter \\\"defaultSetFilter\\\" \\n    -showSetMembers 1\\n    -allowMultiSelection 1\\n    -alwaysToggleSelect 0\\n    -directSelect 0\\n    -displayMode \\\"DAG\\\" \\n    -expandObjects 0\\n    -setsIgnoreFilters 1\\n    -containersIgnoreFilters 0\\n    -editAttrName 0\\n    -showAttrValues 0\\n    -highlightSecondary 0\\n    -showUVAttrsOnly 0\\n    -showTextureNodesOnly 0\\n    -attrAlphaOrder \\\"default\\\" \\n    -animLayerFilterOptions \\\"allAffecting\\\" \\n    -sortOrder \\\"none\\\" \\n    -longNames 0\\n    -niceNames 1\\n    -showNamespace 1\\n    -showPinIcons 0\\n    -mapMotionTrails 0\\n    -ignoreHiddenAttribute 0\\n    -ignoreOutlinerColor 0\\n    $editorName\"\n"
 		+ "\t\t\t\t\t\"outlinerPanel -edit -l (localizedPanelLabel(\\\"Outliner\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\noutlinerEditor -e \\n    -docTag \\\"isolOutln_fromSeln\\\" \\n    -showShapes 0\\n    -showReferenceNodes 1\\n    -showReferenceMembers 1\\n    -showAttributes 0\\n    -showConnected 0\\n    -showAnimCurvesOnly 0\\n    -showMuteInfo 0\\n    -organizeByLayer 1\\n    -showAnimLayerWeight 1\\n    -autoExpandLayers 1\\n    -autoExpand 0\\n    -showDagOnly 1\\n    -showAssets 1\\n    -showContainedOnly 1\\n    -showPublishedAsConnected 0\\n    -showContainerContents 1\\n    -ignoreDagHierarchy 0\\n    -expandConnections 0\\n    -showUpstreamCurves 1\\n    -showUnitlessCurves 1\\n    -showCompounds 1\\n    -showLeafs 1\\n    -showNumericAttrsOnly 0\\n    -highlightActive 1\\n    -autoSelectNewObjects 0\\n    -doNotSelectNewObjects 0\\n    -dropIsParent 1\\n    -transmitFilters 0\\n    -setFilter \\\"defaultSetFilter\\\" \\n    -showSetMembers 1\\n    -allowMultiSelection 1\\n    -alwaysToggleSelect 0\\n    -directSelect 0\\n    -displayMode \\\"DAG\\\" \\n    -expandObjects 0\\n    -setsIgnoreFilters 1\\n    -containersIgnoreFilters 0\\n    -editAttrName 0\\n    -showAttrValues 0\\n    -highlightSecondary 0\\n    -showUVAttrsOnly 0\\n    -showTextureNodesOnly 0\\n    -attrAlphaOrder \\\"default\\\" \\n    -animLayerFilterOptions \\\"allAffecting\\\" \\n    -sortOrder \\\"none\\\" \\n    -longNames 0\\n    -niceNames 1\\n    -showNamespace 1\\n    -showPinIcons 0\\n    -mapMotionTrails 0\\n    -ignoreHiddenAttribute 0\\n    -ignoreOutlinerColor 0\\n    $editorName\"\n"
 		+ "\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
@@ -31772,6 +32927,7 @@ createNode ilrBakeLayerManager -s -n "TurtleBakeLayerManager";
 lockNode -l 1 ;
 createNode ilrBakeLayer -s -n "TurtleDefaultBakeLayer";
 	rename -uid "06D9E106-4E36-0923-0570-71BD5ACCCE13";
+	setAttr -s 165 ".dsm";
 lockNode -l 1 ;
 createNode polyConnectComponents -n "polyConnectComponents1";
 	rename -uid "A2E9F695-4DC7-8531-8FA5-F892BF62CA16";
@@ -34371,215 +35527,225 @@ createNode grid -n "GridTunnelCeil1";
 	setAttr ".lc" -type "float3" 0.28200001 1 1 ;
 	setAttr ".uw" 0.0099999997764825821;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "E11EEEE7-4C50-90F9-4D3B-879AEF88734C";
+	rename -uid "172019B7-42B5-3A28-3C05-0DBF8157AC75";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -301.73926365625607 -3100.1670470331719 ;
-	setAttr ".tgi[0].vh" -type "double2" 473.55278348022745 -2183.3142439439544 ;
+	setAttr ".tgi[0].vl" -type "double2" -301.19046422224238 -3101.2194197875183 ;
+	setAttr ".tgi[0].vh" -type "double2" 474.99998112519654 -2183.3041797481901 ;
 	setAttr -s 68 ".tgi[0].ni";
-	setAttr ".tgi[0].ni[0].x" 200.66938781738281;
-	setAttr ".tgi[0].ni[0].y" 382.25180053710938;
+	setAttr ".tgi[0].ni[0].x" 44.497840881347656;
+	setAttr ".tgi[0].ni[0].y" -651.25830078125;
 	setAttr ".tgi[0].ni[0].nvs" 1923;
-	setAttr ".tgi[0].ni[1].x" 1313.9195556640625;
-	setAttr ".tgi[0].ni[1].y" -1023.1810913085937;
+	setAttr ".tgi[0].ni[1].x" -152.59432983398438;
+	setAttr ".tgi[0].ni[1].y" -1659.371826171875;
 	setAttr ".tgi[0].ni[1].nvs" 1923;
-	setAttr ".tgi[0].ni[2].x" 40.192192077636719;
-	setAttr ".tgi[0].ni[2].y" -922.6446533203125;
+	setAttr ".tgi[0].ni[2].x" 28.838479995727539;
+	setAttr ".tgi[0].ni[2].y" 178.65850830078125;
 	setAttr ".tgi[0].ni[2].nvs" 1923;
-	setAttr ".tgi[0].ni[3].x" 249.17866516113281;
-	setAttr ".tgi[0].ni[3].y" -277.83001708984375;
+	setAttr ".tgi[0].ni[3].x" 38.506816864013672;
+	setAttr ".tgi[0].ni[3].y" -561.05950927734375;
 	setAttr ".tgi[0].ni[3].nvs" 1923;
-	setAttr ".tgi[0].ni[4].x" 397.9970703125;
-	setAttr ".tgi[0].ni[4].y" -2195.9599609375;
+	setAttr ".tgi[0].ni[4].x" 162.30702209472656;
+	setAttr ".tgi[0].ni[4].y" -2502.75927734375;
 	setAttr ".tgi[0].ni[4].nvs" 1923;
-	setAttr ".tgi[0].ni[5].x" 431.76449584960937;
-	setAttr ".tgi[0].ni[5].y" 178.10990905761719;
+	setAttr ".tgi[0].ni[5].x" 147.49252319335937;
+	setAttr ".tgi[0].ni[5].y" -2654.9892578125;
 	setAttr ".tgi[0].ni[5].nvs" 1923;
-	setAttr ".tgi[0].ni[6].x" 1099.99755859375;
-	setAttr ".tgi[0].ni[6].y" -707.4521484375;
+	setAttr ".tgi[0].ni[6].x" 51.682243347167969;
+	setAttr ".tgi[0].ni[6].y" -1191.1474609375;
 	setAttr ".tgi[0].ni[6].nvs" 1923;
-	setAttr ".tgi[0].ni[7].x" 61.173007965087891;
-	setAttr ".tgi[0].ni[7].y" -1935.1683349609375;
+	setAttr ".tgi[0].ni[7].x" 40.387676239013672;
+	setAttr ".tgi[0].ni[7].y" -784.26708984375;
 	setAttr ".tgi[0].ni[7].nvs" 1923;
-	setAttr ".tgi[0].ni[8].x" 43.013877868652344;
-	setAttr ".tgi[0].ni[8].y" -283.07876586914062;
+	setAttr ".tgi[0].ni[8].x" 848.09820556640625;
+	setAttr ".tgi[0].ni[8].y" 183.72793579101562;
 	setAttr ".tgi[0].ni[8].nvs" 1923;
-	setAttr ".tgi[0].ni[9].x" 38.702301025390625;
-	setAttr ".tgi[0].ni[9].y" -423.59689331054687;
+	setAttr ".tgi[0].ni[9].x" 207.00434875488281;
+	setAttr ".tgi[0].ni[9].y" 779.52801513671875;
 	setAttr ".tgi[0].ni[9].nvs" 1923;
-	setAttr ".tgi[0].ni[10].x" 1304.2857666015625;
-	setAttr ".tgi[0].ni[10].y" -11344.2861328125;
+	setAttr ".tgi[0].ni[10].x" 200.66938781738281;
+	setAttr ".tgi[0].ni[10].y" 382.25180053710938;
 	setAttr ".tgi[0].ni[10].nvs" 1923;
-	setAttr ".tgi[0].ni[11].x" 876.08612060546875;
-	setAttr ".tgi[0].ni[11].y" -255.85719299316406;
+	setAttr ".tgi[0].ni[11].x" 293.52264404296875;
+	setAttr ".tgi[0].ni[11].y" -1243.5264892578125;
 	setAttr ".tgi[0].ni[11].nvs" 1923;
-	setAttr ".tgi[0].ni[12].x" 63.585556030273438;
-	setAttr ".tgi[0].ni[12].y" -1041.746337890625;
+	setAttr ".tgi[0].ni[12].x" 65.042816162109375;
+	setAttr ".tgi[0].ni[12].y" -2351.2841796875;
 	setAttr ".tgi[0].ni[12].nvs" 1923;
-	setAttr ".tgi[0].ni[13].x" 854.12200927734375;
-	setAttr ".tgi[0].ni[13].y" -91.743331909179688;
+	setAttr ".tgi[0].ni[13].x" 425.63491821289062;
+	setAttr ".tgi[0].ni[13].y" -81.586044311523438;
 	setAttr ".tgi[0].ni[13].nvs" 1923;
-	setAttr ".tgi[0].ni[14].x" -152.59432983398438;
-	setAttr ".tgi[0].ni[14].y" -1659.371826171875;
+	setAttr ".tgi[0].ni[14].x" 675.3310546875;
+	setAttr ".tgi[0].ni[14].y" -255.920166015625;
 	setAttr ".tgi[0].ni[14].nvs" 1923;
-	setAttr ".tgi[0].ni[15].x" 282.71954345703125;
-	setAttr ".tgi[0].ni[15].y" -1073.73974609375;
+	setAttr ".tgi[0].ni[15].x" 464.53216552734375;
+	setAttr ".tgi[0].ni[15].y" -548.06219482421875;
 	setAttr ".tgi[0].ni[15].nvs" 1923;
-	setAttr ".tgi[0].ni[16].x" 38.506816864013672;
-	setAttr ".tgi[0].ni[16].y" -561.05950927734375;
+	setAttr ".tgi[0].ni[16].x" 645.29437255859375;
+	setAttr ".tgi[0].ni[16].y" -2847.61279296875;
 	setAttr ".tgi[0].ni[16].nvs" 1923;
-	setAttr ".tgi[0].ni[17].x" 425.63491821289062;
-	setAttr ".tgi[0].ni[17].y" -81.586044311523438;
+	setAttr ".tgi[0].ni[17].x" -71.432830810546875;
+	setAttr ".tgi[0].ni[17].y" -2536.797607421875;
 	setAttr ".tgi[0].ni[17].nvs" 1923;
-	setAttr ".tgi[0].ni[18].x" -165.24659729003906;
-	setAttr ".tgi[0].ni[18].y" 180.39888000488281;
+	setAttr ".tgi[0].ni[18].x" 1313.9195556640625;
+	setAttr ".tgi[0].ni[18].y" -1023.1810913085937;
 	setAttr ".tgi[0].ni[18].nvs" 1923;
-	setAttr ".tgi[0].ni[19].x" 167.32986450195312;
-	setAttr ".tgi[0].ni[19].y" -2043.40625;
+	setAttr ".tgi[0].ni[19].x" 104.38821411132812;
+	setAttr ".tgi[0].ni[19].y" -1466.003662109375;
 	setAttr ".tgi[0].ni[19].nvs" 1923;
-	setAttr ".tgi[0].ni[20].x" 1300.9530029296875;
-	setAttr ".tgi[0].ni[20].y" -711.681640625;
+	setAttr ".tgi[0].ni[20].x" 477.84817504882812;
+	setAttr ".tgi[0].ni[20].y" -1948.6978759765625;
 	setAttr ".tgi[0].ni[20].nvs" 1923;
-	setAttr ".tgi[0].ni[21].x" 434.95510864257812;
-	setAttr ".tgi[0].ni[21].y" 359.3946533203125;
+	setAttr ".tgi[0].ni[21].x" 687.4217529296875;
+	setAttr ".tgi[0].ni[21].y" -2506.654541015625;
 	setAttr ".tgi[0].ni[21].nvs" 1923;
-	setAttr ".tgi[0].ni[22].x" 735.55645751953125;
-	setAttr ".tgi[0].ni[22].y" -1050.0172119140625;
+	setAttr ".tgi[0].ni[22].x" 282.71954345703125;
+	setAttr ".tgi[0].ni[22].y" -1073.73974609375;
 	setAttr ".tgi[0].ni[22].nvs" 1923;
-	setAttr ".tgi[0].ni[23].x" 647.3431396484375;
-	setAttr ".tgi[0].ni[23].y" 183.66497802734375;
+	setAttr ".tgi[0].ni[23].x" 854.12200927734375;
+	setAttr ".tgi[0].ni[23].y" -91.743331909179688;
 	setAttr ".tgi[0].ni[23].nvs" 1923;
-	setAttr ".tgi[0].ni[24].x" 473.35079956054687;
-	setAttr ".tgi[0].ni[24].y" -1805.3262939453125;
+	setAttr ".tgi[0].ni[24].x" 1300.9530029296875;
+	setAttr ".tgi[0].ni[24].y" -711.681640625;
 	setAttr ".tgi[0].ni[24].nvs" 1923;
-	setAttr ".tgi[0].ni[25].x" 365.8167724609375;
-	setAttr ".tgi[0].ni[25].y" -1443.146484375;
+	setAttr ".tgi[0].ni[25].x" 518.02642822265625;
+	setAttr ".tgi[0].ni[25].y" -1034.9449462890625;
 	setAttr ".tgi[0].ni[25].nvs" 1923;
-	setAttr ".tgi[0].ni[26].x" 65.042816162109375;
-	setAttr ".tgi[0].ni[26].y" -2351.2841796875;
+	setAttr ".tgi[0].ni[26].x" 397.9970703125;
+	setAttr ".tgi[0].ni[26].y" -2195.9599609375;
 	setAttr ".tgi[0].ni[26].nvs" 1923;
-	setAttr ".tgi[0].ni[27].x" 518.02642822265625;
-	setAttr ".tgi[0].ni[27].y" -1034.9449462890625;
+	setAttr ".tgi[0].ni[27].x" 432.90103149414062;
+	setAttr ".tgi[0].ni[27].y" 49.241535186767578;
 	setAttr ".tgi[0].ni[27].nvs" 1923;
-	setAttr ".tgi[0].ni[28].x" 465.10211181640625;
-	setAttr ".tgi[0].ni[28].y" -410.14126586914062;
+	setAttr ".tgi[0].ni[28].x" -165.24659729003906;
+	setAttr ".tgi[0].ni[28].y" 180.39888000488281;
 	setAttr ".tgi[0].ni[28].nvs" 1923;
-	setAttr ".tgi[0].ni[29].x" 461.73135375976562;
-	setAttr ".tgi[0].ni[29].y" -273.62591552734375;
+	setAttr ".tgi[0].ni[29].x" 441.05477905273437;
+	setAttr ".tgi[0].ni[29].y" -2533.94677734375;
 	setAttr ".tgi[0].ni[29].nvs" 1923;
-	setAttr ".tgi[0].ni[30].x" 44.497840881347656;
-	setAttr ".tgi[0].ni[30].y" -651.25830078125;
+	setAttr ".tgi[0].ni[30].x" 466.889892578125;
+	setAttr ".tgi[0].ni[30].y" -1667.9019775390625;
 	setAttr ".tgi[0].ni[30].nvs" 1923;
-	setAttr ".tgi[0].ni[31].x" 96.887535095214844;
-	setAttr ".tgi[0].ni[31].y" -1320.434326171875;
+	setAttr ".tgi[0].ni[31].x" 465.10211181640625;
+	setAttr ".tgi[0].ni[31].y" -410.14126586914062;
 	setAttr ".tgi[0].ni[31].nvs" 1923;
-	setAttr ".tgi[0].ni[32].x" 1302.09912109375;
-	setAttr ".tgi[0].ni[32].y" -865.939208984375;
+	setAttr ".tgi[0].ni[32].x" 872.72064208984375;
+	setAttr ".tgi[0].ni[32].y" -426.44534301757812;
 	setAttr ".tgi[0].ni[32].nvs" 1923;
-	setAttr ".tgi[0].ni[33].x" -156.25723266601562;
-	setAttr ".tgi[0].ni[33].y" -651.32122802734375;
+	setAttr ".tgi[0].ni[33].x" 61.173007965087891;
+	setAttr ".tgi[0].ni[33].y" -1935.1683349609375;
 	setAttr ".tgi[0].ni[33].nvs" 1923;
-	setAttr ".tgi[0].ni[34].x" -126.97267913818359;
-	setAttr ".tgi[0].ni[34].y" -2061.837158203125;
+	setAttr ".tgi[0].ni[34].x" 1304.2857666015625;
+	setAttr ".tgi[0].ni[34].y" -11344.2861328125;
 	setAttr ".tgi[0].ni[34].nvs" 1923;
-	setAttr ".tgi[0].ni[35].x" 228.91258239746094;
-	setAttr ".tgi[0].ni[35].y" 196.23626708984375;
+	setAttr ".tgi[0].ni[35].x" 680.9912109375;
+	setAttr ".tgi[0].ni[35].y" -2682.219482421875;
 	setAttr ".tgi[0].ni[35].nvs" 1923;
-	setAttr ".tgi[0].ni[36].x" 466.889892578125;
-	setAttr ".tgi[0].ni[36].y" -1667.9019775390625;
-	setAttr ".tgi[0].ni[36].nvs" 1923;
-	setAttr ".tgi[0].ni[37].x" 51.682243347167969;
-	setAttr ".tgi[0].ni[37].y" -1191.1474609375;
+	setAttr ".tgi[0].ni[36].x" -142.92446899414062;
+	setAttr ".tgi[0].ni[36].y" -1041.1141357421875;
+	setAttr ".tgi[0].ni[36].nvs" 18305;
+	setAttr ".tgi[0].ni[37].x" 517.47845458984375;
+	setAttr ".tgi[0].ni[37].y" -1190.4105224609375;
 	setAttr ".tgi[0].ni[37].nvs" 1923;
-	setAttr ".tgi[0].ni[38].x" 675.3310546875;
-	setAttr ".tgi[0].ni[38].y" -255.920166015625;
+	setAttr ".tgi[0].ni[38].x" 1302.09912109375;
+	setAttr ".tgi[0].ni[38].y" -865.939208984375;
 	setAttr ".tgi[0].ni[38].nvs" 1923;
-	setAttr ".tgi[0].ni[39].x" -148.56977844238281;
-	setAttr ".tgi[0].ni[39].y" -267.7177734375;
+	setAttr ".tgi[0].ni[39].x" 365.8167724609375;
+	setAttr ".tgi[0].ni[39].y" -1443.146484375;
 	setAttr ".tgi[0].ni[39].nvs" 1923;
-	setAttr ".tgi[0].ni[40].x" 67.186546325683594;
-	setAttr ".tgi[0].ni[40].y" -1789.86181640625;
+	setAttr ".tgi[0].ni[40].x" 40.192192077636719;
+	setAttr ".tgi[0].ni[40].y" -922.6446533203125;
 	setAttr ".tgi[0].ni[40].nvs" 1923;
-	setAttr ".tgi[0].ni[41].x" 28.838479995727539;
-	setAttr ".tgi[0].ni[41].y" 178.65850830078125;
+	setAttr ".tgi[0].ni[41].x" -126.97267913818359;
+	setAttr ".tgi[0].ni[41].y" -2061.837158203125;
 	setAttr ".tgi[0].ni[41].nvs" 1923;
-	setAttr ".tgi[0].ni[42].x" -142.92446899414062;
-	setAttr ".tgi[0].ni[42].y" -1041.1141357421875;
-	setAttr ".tgi[0].ni[42].nvs" 18305;
-	setAttr ".tgi[0].ni[43].x" 477.84817504882812;
-	setAttr ".tgi[0].ni[43].y" -1948.6978759765625;
+	setAttr ".tgi[0].ni[42].x" 434.95510864257812;
+	setAttr ".tgi[0].ni[42].y" 534.7550048828125;
+	setAttr ".tgi[0].ni[42].nvs" 1923;
+	setAttr ".tgi[0].ni[43].x" 38.702301025390625;
+	setAttr ".tgi[0].ni[43].y" -423.59689331054687;
 	setAttr ".tgi[0].ni[43].nvs" 1923;
-	setAttr ".tgi[0].ni[44].x" 434.95510864257812;
-	setAttr ".tgi[0].ni[44].y" 534.7550048828125;
+	setAttr ".tgi[0].ni[44].x" 473.35079956054687;
+	setAttr ".tgi[0].ni[44].y" -1805.3262939453125;
 	setAttr ".tgi[0].ni[44].nvs" 1923;
-	setAttr ".tgi[0].ni[45].x" 104.38821411132812;
-	setAttr ".tgi[0].ni[45].y" -1466.003662109375;
+	setAttr ".tgi[0].ni[45].x" 228.91258239746094;
+	setAttr ".tgi[0].ni[45].y" 196.23626708984375;
 	setAttr ".tgi[0].ni[45].nvs" 1923;
-	setAttr ".tgi[0].ni[46].x" 40.387676239013672;
-	setAttr ".tgi[0].ni[46].y" -784.26708984375;
+	setAttr ".tgi[0].ni[46].x" 63.585556030273438;
+	setAttr ".tgi[0].ni[46].y" -1041.746337890625;
 	setAttr ".tgi[0].ni[46].nvs" 1923;
-	setAttr ".tgi[0].ni[47].x" 859.37359619140625;
-	setAttr ".tgi[0].ni[47].y" 48.319629669189453;
+	setAttr ".tgi[0].ni[47].x" 249.17866516113281;
+	setAttr ".tgi[0].ni[47].y" -277.83001708984375;
 	setAttr ".tgi[0].ni[47].nvs" 1923;
-	setAttr ".tgi[0].ni[48].x" 432.90103149414062;
-	setAttr ".tgi[0].ni[48].y" 49.241535186767578;
+	setAttr ".tgi[0].ni[48].x" 461.73135375976562;
+	setAttr ".tgi[0].ni[48].y" -273.62591552734375;
 	setAttr ".tgi[0].ni[48].nvs" 1923;
-	setAttr ".tgi[0].ni[49].x" 848.09820556640625;
-	setAttr ".tgi[0].ni[49].y" 183.72793579101562;
+	setAttr ".tgi[0].ni[49].x" 859.37359619140625;
+	setAttr ".tgi[0].ni[49].y" 48.319629669189453;
 	setAttr ".tgi[0].ni[49].nvs" 1923;
-	setAttr ".tgi[0].ni[50].x" 517.47845458984375;
-	setAttr ".tgi[0].ni[50].y" -1190.4105224609375;
+	setAttr ".tgi[0].ni[50].x" 2208.571533203125;
+	setAttr ".tgi[0].ni[50].y" -11967.142578125;
 	setAttr ".tgi[0].ni[50].nvs" 1923;
-	setAttr ".tgi[0].ni[51].x" 207.00434875488281;
-	setAttr ".tgi[0].ni[51].y" 779.52801513671875;
+	setAttr ".tgi[0].ni[51].x" 152.43069458007813;
+	setAttr ".tgi[0].ni[51].y" -2851.078857421875;
 	setAttr ".tgi[0].ni[51].nvs" 1923;
-	setAttr ".tgi[0].ni[52].x" 293.52264404296875;
-	setAttr ".tgi[0].ni[52].y" -1243.5264892578125;
+	setAttr ".tgi[0].ni[52].x" 1134.1492919921875;
+	setAttr ".tgi[0].ni[52].y" -403.58819580078125;
 	setAttr ".tgi[0].ni[52].nvs" 1923;
-	setAttr ".tgi[0].ni[53].x" 272.52981567382812;
-	setAttr ".tgi[0].ni[53].y" -1667.01123046875;
+	setAttr ".tgi[0].ni[53].x" 431.76449584960937;
+	setAttr ".tgi[0].ni[53].y" 178.10990905761719;
 	setAttr ".tgi[0].ni[53].nvs" 1923;
-	setAttr ".tgi[0].ni[54].x" 464.53216552734375;
-	setAttr ".tgi[0].ni[54].y" -548.06219482421875;
+	setAttr ".tgi[0].ni[54].x" 96.887535095214844;
+	setAttr ".tgi[0].ni[54].y" -1320.434326171875;
 	setAttr ".tgi[0].ni[54].nvs" 1923;
-	setAttr ".tgi[0].ni[55].x" -164.54103088378906;
-	setAttr ".tgi[0].ni[55].y" -1207.5771484375;
+	setAttr ".tgi[0].ni[55].x" 43.013877868652344;
+	setAttr ".tgi[0].ni[55].y" -283.07876586914062;
 	setAttr ".tgi[0].ni[55].nvs" 1923;
-	setAttr ".tgi[0].ni[56].x" 62.900867462158203;
-	setAttr ".tgi[0].ni[56].y" -1662.99658203125;
+	setAttr ".tgi[0].ni[56].x" 167.32986450195312;
+	setAttr ".tgi[0].ni[56].y" -2043.40625;
 	setAttr ".tgi[0].ni[56].nvs" 1923;
-	setAttr ".tgi[0].ni[57].x" 2208.571533203125;
-	setAttr ".tgi[0].ni[57].y" -11967.142578125;
+	setAttr ".tgi[0].ni[57].x" 1099.99755859375;
+	setAttr ".tgi[0].ni[57].y" -707.4521484375;
 	setAttr ".tgi[0].ni[57].nvs" 1923;
-	setAttr ".tgi[0].ni[58].x" 1134.1492919921875;
-	setAttr ".tgi[0].ni[58].y" -403.58819580078125;
+	setAttr ".tgi[0].ni[58].x" -164.54103088378906;
+	setAttr ".tgi[0].ni[58].y" -1207.5771484375;
 	setAttr ".tgi[0].ni[58].nvs" 1923;
-	setAttr ".tgi[0].ni[59].x" 872.72064208984375;
-	setAttr ".tgi[0].ni[59].y" -426.44534301757812;
+	setAttr ".tgi[0].ni[59].x" 62.900867462158203;
+	setAttr ".tgi[0].ni[59].y" -1662.99658203125;
 	setAttr ".tgi[0].ni[59].nvs" 1923;
-	setAttr ".tgi[0].ni[60].x" 162.30702209472656;
-	setAttr ".tgi[0].ni[60].y" -2502.75927734375;
+	setAttr ".tgi[0].ni[60].x" 67.186546325683594;
+	setAttr ".tgi[0].ni[60].y" -1789.86181640625;
 	setAttr ".tgi[0].ni[60].nvs" 1923;
-	setAttr ".tgi[0].ni[61].x" -71.432830810546875;
-	setAttr ".tgi[0].ni[61].y" -2536.797607421875;
+	setAttr ".tgi[0].ni[61].x" 434.95510864257812;
+	setAttr ".tgi[0].ni[61].y" 359.3946533203125;
 	setAttr ".tgi[0].ni[61].nvs" 1923;
-	setAttr ".tgi[0].ni[62].x" 147.49252319335937;
-	setAttr ".tgi[0].ni[62].y" -2654.9892578125;
+	setAttr ".tgi[0].ni[62].x" 735.55645751953125;
+	setAttr ".tgi[0].ni[62].y" -1050.0172119140625;
 	setAttr ".tgi[0].ni[62].nvs" 1923;
-	setAttr ".tgi[0].ni[63].x" 152.43069458007813;
-	setAttr ".tgi[0].ni[63].y" -2851.078857421875;
+	setAttr ".tgi[0].ni[63].x" -148.56977844238281;
+	setAttr ".tgi[0].ni[63].y" -267.7177734375;
 	setAttr ".tgi[0].ni[63].nvs" 1923;
-	setAttr ".tgi[0].ni[64].x" 687.4217529296875;
-	setAttr ".tgi[0].ni[64].y" -2506.654541015625;
+	setAttr ".tgi[0].ni[64].x" 272.52981567382812;
+	setAttr ".tgi[0].ni[64].y" -1667.01123046875;
 	setAttr ".tgi[0].ni[64].nvs" 1923;
-	setAttr ".tgi[0].ni[65].x" 441.05477905273437;
-	setAttr ".tgi[0].ni[65].y" -2533.94677734375;
+	setAttr ".tgi[0].ni[65].x" -156.25723266601562;
+	setAttr ".tgi[0].ni[65].y" -651.32122802734375;
 	setAttr ".tgi[0].ni[65].nvs" 1923;
-	setAttr ".tgi[0].ni[66].x" 645.29437255859375;
-	setAttr ".tgi[0].ni[66].y" -2847.61279296875;
+	setAttr ".tgi[0].ni[66].x" 876.08612060546875;
+	setAttr ".tgi[0].ni[66].y" -255.85719299316406;
 	setAttr ".tgi[0].ni[66].nvs" 1923;
-	setAttr ".tgi[0].ni[67].x" 680.9912109375;
-	setAttr ".tgi[0].ni[67].y" -2682.219482421875;
+	setAttr ".tgi[0].ni[67].x" 647.3431396484375;
+	setAttr ".tgi[0].ni[67].y" 183.66497802734375;
 	setAttr ".tgi[0].ni[67].nvs" 1923;
+createNode polyAutoProj -n "polyAutoProj57";
+	rename -uid "E468A911-44E5-B7CA-FC25-C5B26D2D1773";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 1 "f[0:99]";
+	setAttr ".ix" -type "matrix" -1.0642405392392504e-013 25.907639437570079 2.8763257817277043e-015 0
+		 9.0388051815560235e-014 0 -39.714302095151432 0 255.51906536807945 1.0921801259690178e-012 5.3899798424445033e-013 0
+		 536.79024392269127 14.365933322411729 305.70589930757967 1;
+	setAttr ".s" -type "double3" 203.74682046667272 203.74682046667272 203.74682046667272 ;
+	setAttr ".ps" 0.20000000298023224;
+	setAttr ".dl" yes;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -35193,7 +36359,7 @@ connectAttr "bend7GroupId.id" "bend7GroupParts.gi";
 connectAttr "groupId12.msg" "tweakSet6.gn" -na;
 connectAttr "|WallCurva4Right1|WallCurva4Right1.iog.og[1]" "tweakSet6.dsm" -na;
 connectAttr "tweak6.msg" "tweakSet6.ub[0]";
-connectAttr "polyAutoProj40.out" "groupParts12.ig";
+connectAttr "polyAutoProj57.out" "groupParts12.ig";
 connectAttr "groupId12.id" "groupParts12.gi";
 connectAttr "bend8GroupParts.og" "bend8.ip[0].ig";
 connectAttr "bend8GroupId.id" "bend8.ip[0].gi";
@@ -35540,6 +36706,281 @@ connectAttr "place2dTexture12.o" "SpikeGrid.uv";
 connectAttr "place2dTexture12.ofs" "SpikeGrid.fs";
 connectAttr ":TurtleDefaultBakeLayer.idx" ":TurtleBakeLayerManager.bli[0]";
 connectAttr ":TurtleRenderOptions.msg" ":TurtleDefaultBakeLayer.rset";
+connectAttr "|Recta1|Recta1.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "|Recta2|Recta2.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "|Recta3|Recta3.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "|Tunel1|Tunel1.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "TunnelExitShape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "TunnelExitBackShape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "TunnelEntranceShape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "TunnelEntranceBackShape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "TunnelWall1BackShape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "TunnelWal1Shape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "TunnelWall2Shape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "TunnelWal2BackShape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "TunnelCeiling1Shape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "TunnelCeiling1BackShape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "TunnelCeiling2Shape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "TunnelCeiling2BackShape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "TunnelDiv1Shape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "TunnelDiv1BackShape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "TunnelDiv2Shape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "TunnelDiv2BackShape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "TunnelExit2BackShape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "TunnelExit2Shape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "|Curva1BendHandler|Curva1|Curva1.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "Curva2.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "|Wall1|Wall1Right|Wall1Right.iog" ":TurtleDefaultBakeLayer.dsm" -na
+		;
+connectAttr "|Wall1|Wall1Right1|Wall1Right1.iog" ":TurtleDefaultBakeLayer.dsm" -na
+		;
+connectAttr "|Wall2|Wall2Left|Wall2Left.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "|Wall2|Wall2Right|Wall2Right.iog" ":TurtleDefaultBakeLayer.dsm" -na
+		;
+connectAttr "|Wall3|Wall3Left|Wall3Left.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "|Wall3|Wall3Right|Wall3Right.iog" ":TurtleDefaultBakeLayer.dsm" -na
+		;
+connectAttr "|bend4Handle|WallCurva1Right|WallCurva1Right.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|bend5Handle|WallCurva2Left|WallCurva2Left.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "Wall4LeftLeft.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "Sawblade1Shape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "Sawblade2Shape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "Sawblade3Shape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "Sawblade10Shape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "Sawblade9Shape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "pCubeShape1.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "Sawblade7Shape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "Sawblade4Shape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "Sawblade5Shape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "|WallCurva4Right1|WallCurva4Right1.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|bend8Handle|CurvaSalidaTunel|CurvaSalidaTunel.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|bend9Handle|Wall2Left1|Wall2Left1.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SawbladeCylinder1|Sawblade11|Sawblade11Shape.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SawbladeCylinder1|Sawblade13|Sawblade13Shape.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SawbladeCylinder1|Sawblade12|Sawblade12Shape.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SawbladeCylinder1|pCylinder1|pCylinderShape1.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SawbladeCylinder2|Sawblade11|Sawblade11Shape.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SawbladeCylinder2|Sawblade13|Sawblade13Shape.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SawbladeCylinder2|Sawblade12|Sawblade12Shape.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SawbladeCylinder2|pCylinder1|pCylinderShape1.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "Propellor1Shape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "Propellor2Shape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "Propellor3Shape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "StartFlagShape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "EndFlagShape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow1|Spike1|SpikeShape1.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow1|Spike2|SpikeShape2.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow1|Spike3|SpikeShape3.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow1|Spike4|SpikeShape4.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow1|Spike5|SpikeShape5.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow1|Spike6|SpikeShape6.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow2|Spike1|SpikeShape1.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow2|Spike2|SpikeShape2.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow2|Spike3|SpikeShape3.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow2|Spike4|SpikeShape4.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow3|Spike1|SpikeShape1.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow3|Spike2|SpikeShape2.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow5|Spike7|SpikeShape7.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow5|Spike8|SpikeShape8.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow5|Spike9|SpikeShape9.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow6|Spike5|SpikeShape5.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow6|Spike6|SpikeShape6.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow6|Spike7|SpikeShape7.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow6|Spike8|SpikeShape8.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow6|Spike9|SpikeShape9.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow7|Spike3|SpikeShape3.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow7|Spike4|SpikeShape4.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow7|Spike5|SpikeShape5.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow7|Spike6|SpikeShape6.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow7|Spike7|SpikeShape7.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow7|Spike8|SpikeShape8.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow7|Spike9|SpikeShape9.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow8|Spike1|SpikeShape1.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow8|Spike2|SpikeShape2.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow8|Spike3|SpikeShape3.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow8|Spike4|SpikeShape4.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow8|Spike5|SpikeShape5.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow8|Spike6|SpikeShape6.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow8|Spike7|SpikeShape7.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow8|Spike8|SpikeShape8.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow8|Spike9|SpikeShape9.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow9|Spike1|SpikeShape1.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow9|Spike2|SpikeShape2.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow9|Spike3|SpikeShape3.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow9|Spike4|SpikeShape4.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow9|Spike5|SpikeShape5.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow9|Spike6|SpikeShape6.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow9|Spike7|SpikeShape7.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow9|Spike8|SpikeShape8.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|SpikeSurface1|SpikeRow9|Spike9|SpikeShape9.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap|Cube1|CubeShape1.iog" ":TurtleDefaultBakeLayer.dsm" 
+		-na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1|Spike1|SpikeShape1.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1|Spike2|SpikeShape2.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1|Spike3|SpikeShape3.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1|Spike4|SpikeShape4.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1|Spike5|SpikeShape5.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow1|Spike6|SpikeShape6.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "SpikeShape10.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "SpikeShape11.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "SpikeShape12.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2|Spike1|SpikeShape1.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2|Spike2|SpikeShape2.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2|Spike3|SpikeShape3.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2|Spike4|SpikeShape4.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2|Spike5|SpikeShape5.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow2|Spike6|SpikeShape6.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "SpikeShape13.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "SpikeShape14.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "SpikeShape15.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3|Spike1|SpikeShape1.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3|Spike2|SpikeShape2.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3|Spike3|SpikeShape3.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3|Spike4|SpikeShape4.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3|Spike5|SpikeShape5.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow3|Spike6|SpikeShape6.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "SpikeShape16.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "SpikeShape17.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "SpikeShape18.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5|Spike1|SpikeShape1.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5|Spike2|SpikeShape2.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5|Spike3|SpikeShape3.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5|Spike4|SpikeShape4.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5|Spike5|SpikeShape5.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5|Spike6|SpikeShape6.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5|Spike7|SpikeShape7.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5|Spike8|SpikeShape8.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow5|Spike9|SpikeShape9.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6|Spike1|SpikeShape1.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6|Spike2|SpikeShape2.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6|Spike3|SpikeShape3.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6|Spike4|SpikeShape4.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6|Spike5|SpikeShape5.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6|Spike6|SpikeShape6.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6|Spike7|SpikeShape7.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6|Spike8|SpikeShape8.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow6|Spike9|SpikeShape9.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9|Spike1|SpikeShape1.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9|Spike2|SpikeShape2.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9|Spike3|SpikeShape3.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9|Spike4|SpikeShape4.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9|Spike5|SpikeShape5.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9|Spike6|SpikeShape6.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9|Spike7|SpikeShape7.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9|Spike8|SpikeShape8.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|SpikeSurface1|SpikeRow9|Spike9|SpikeShape9.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "|SpikeCubeTrap2|Cube1|CubeShape1.iog" ":TurtleDefaultBakeLayer.dsm"
+		 -na;
+connectAttr "Curva4.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "pPipeShape1.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "pPipeShape2.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "pPipeShape3.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "pPipeShape4.iog" ":TurtleDefaultBakeLayer.dsm" -na;
+connectAttr "nave:naveFinalShape.iog" ":TurtleDefaultBakeLayer.dsm" -na;
 connectAttr "polySurfaceShape2.o" "polyConnectComponents1.ip";
 connectAttr "polySurfaceShape3.o" "polyConnectComponents2.ip";
 connectAttr "polySurfaceShape4.o" "polyConnectComponents3.ip";
@@ -36131,6 +37572,7 @@ connectAttr "|WallCurva4Right1|WallCurva4Right1.iog" "blinn2SG2.dsm" -na;
 connectAttr "|bend9Handle|Wall2Left1|Wall2Left1.iog" "blinn2SG2.dsm" -na;
 connectAttr "blinn2SG2.msg" "materialInfo16.sg";
 connectAttr "MatPared2.msg" "materialInfo16.m";
+connectAttr "GridPista2.msg" "materialInfo16.t" -na;
 connectAttr "GridTunnelCeil1.oc" "MatTunnelCeil1.c";
 connectAttr "MatTunnelCeil1.oc" "blinn4SG1.ss";
 connectAttr "TunnelWal2BackShape.iog" "blinn4SG1.dsm" -na;
@@ -36138,143 +37580,146 @@ connectAttr "TunnelWall2Shape.iog" "blinn4SG1.dsm" -na;
 connectAttr "TunnelWall1BackShape.iog" "blinn4SG1.dsm" -na;
 connectAttr "blinn4SG1.msg" "materialInfo17.sg";
 connectAttr "MatTunnelCeil1.msg" "materialInfo17.m";
+connectAttr "GridTunnelCeil1.msg" "materialInfo17.t" -na;
 connectAttr "place2dTexture17.o" "GridTunnelCeil1.uv";
-connectAttr "blinn2SG1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+connectAttr "blinn7SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
 		;
-connectAttr "place2dTexture14.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
+connectAttr "PropellorMat.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
 		;
-connectAttr "place2dTexture6.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+connectAttr "blinn1SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
 		;
-connectAttr "MatTunnelCeil.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
+connectAttr "place2dTexture2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
 		;
-connectAttr "GridCubosObs.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
+connectAttr "blinn2SG2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
 		;
-connectAttr "blinn2SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
+connectAttr "GridPista2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
 		;
-connectAttr "MatPipe.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
+connectAttr "place2dTexture8.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
 		;
-connectAttr "place2dTexture10.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[7].dn"
+connectAttr "FinalBanderaInicio.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[7].dn"
 		;
-connectAttr "blinn3SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[8].dn"
+connectAttr "blinn5SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[8].dn"
 		;
-connectAttr "GridTunnelEnt.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[9].dn"
+connectAttr "MatRecta1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[9].dn"
 		;
-connectAttr "nave:lambert2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[10].dn"
+connectAttr "blinn2SG1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[10].dn"
 		;
-connectAttr "blinn6SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[11].dn"
+connectAttr "place2dTexture7.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[11].dn"
 		;
-connectAttr "blinn8SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[12].dn"
+connectAttr "place2dTexture11.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[12].dn"
 		;
-connectAttr "place2dTexture4.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[13].dn"
+connectAttr "place2dTexture1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[13].dn"
 		;
-connectAttr "PropellorMat.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[14].dn"
+connectAttr "MatBanderaFinal.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[14].dn"
 		;
-connectAttr "grid2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[15].dn"
+connectAttr "place2dTexture3.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[15].dn"
 		;
-connectAttr "place2dTexture2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[16].dn"
+connectAttr "place2dTexture17.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[16].dn"
 		;
-connectAttr "place2dTexture1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[17].dn"
+connectAttr "MatPared2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[17].dn"
 		;
-connectAttr "MatEsferaStart.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[18].dn"
+connectAttr "place2dTexture14.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[18].dn"
 		;
-connectAttr "blinn11SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[19].dn"
+connectAttr "place2dTexture9.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[19].dn"
 		;
-connectAttr "blinn13SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[20].dn"
+connectAttr "place2dTexture12.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[20].dn"
 		;
-connectAttr "place2dTexture13.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[21].dn"
+connectAttr "blinn4SG1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[21].dn"
 		;
-connectAttr "grid1Material.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[22].dn"
+connectAttr "grid2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[22].dn"
 		;
-connectAttr "MatBaranda.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[23].dn"
+connectAttr "place2dTexture4.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[23].dn"
 		;
-connectAttr "SpikeGrid.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[24].dn"
+connectAttr "blinn13SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[24].dn"
 		;
-connectAttr "grid3.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[25].dn"
+connectAttr "grid1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[25].dn"
 		;
-connectAttr "place2dTexture11.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[26].dn"
+connectAttr "GridCubosObs.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[26].dn"
 		;
-connectAttr "grid1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[27].dn"
+connectAttr "GridPista.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[27].dn"
 		;
-connectAttr "GridTunnelCeil.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[28].dn"
+connectAttr "MatEsferaStart.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[28].dn"
 		;
-connectAttr "blinn4SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[29].dn"
+connectAttr "MatTunnelCeil1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[29].dn"
 		;
-connectAttr "blinn7SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[30].dn"
+connectAttr "blinn12SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[30].dn"
 		;
-connectAttr "blinn9SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[31].dn"
+connectAttr "GridTunnelCeil.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[31].dn"
 		;
-connectAttr "GridPipe.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[32].dn"
+connectAttr "place2dTexture15.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[32].dn"
 		;
-connectAttr "MatBanderaInicio.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[33].dn"
+connectAttr "place2dTexture10.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[33].dn"
 		;
-connectAttr "MatCubosObs.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[34].dn"
+connectAttr "nave:lambert2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[34].dn"
 		;
-connectAttr "MatRecta.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[35].dn"
+connectAttr "GridTunnelCeil1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[35].dn"
 		;
-connectAttr "blinn12SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[36].dn"
+connectAttr "blinn8.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[36].dn"
 		;
-connectAttr "place2dTexture8.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[37].dn"
+connectAttr "grid1SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[37].dn"
 		;
-connectAttr "MatBanderaFinal.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[38].dn"
+connectAttr "GridPipe.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[38].dn"
 		;
-connectAttr "MatTunnelEnt.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[39].dn"
+connectAttr "grid3.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[39].dn"
 		;
-connectAttr "grid4.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[40].dn"
+connectAttr "place2dTexture6.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[40].dn"
 		;
-connectAttr "blinn1SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[41].dn"
+connectAttr "MatCubosObs.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[41].dn"
 		;
-connectAttr "blinn8.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[42].dn"
+connectAttr "GridPista1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[42].dn"
 		;
-connectAttr "place2dTexture12.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[43].dn"
+connectAttr "GridTunnelEnt.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[43].dn"
 		;
-connectAttr "GridPista1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[44].dn"
+connectAttr "SpikeGrid.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[44].dn"
 		;
-connectAttr "place2dTexture9.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[45].dn"
+connectAttr "MatRecta.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[45].dn"
 		;
-connectAttr "FinalBanderaInicio.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[46].dn"
+connectAttr "blinn8SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[46].dn"
 		;
-connectAttr "GridBaranda.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[47].dn"
+connectAttr "MatTunnelCeil.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[47].dn"
 		;
-connectAttr "GridPista.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[48].dn"
+connectAttr "blinn4SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[48].dn"
 		;
-connectAttr "blinn5SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[49].dn"
+connectAttr "GridBaranda.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[49].dn"
 		;
-connectAttr "grid1SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[50].dn"
+connectAttr "nave:blinnLogo.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[50].dn"
 		;
-connectAttr "MatRecta1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[51].dn"
+connectAttr "place2dTexture16.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[51].dn"
 		;
-connectAttr "place2dTexture7.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[52].dn"
+connectAttr "file1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[52].dn"
 		;
-connectAttr "MatSpike.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[53].dn"
+connectAttr "blinn2SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[53].dn"
 		;
-connectAttr "place2dTexture3.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[54].dn"
+connectAttr "blinn9SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[54].dn"
 		;
-connectAttr "blinn9.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[55].dn"
+connectAttr "blinn3SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[55].dn"
 		;
-connectAttr "blinn10SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[56].dn"
+connectAttr "blinn11SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[56].dn"
 		;
-connectAttr "nave:blinnLogo.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[57].dn"
+connectAttr "MatPipe.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[57].dn"
 		;
-connectAttr "file1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[58].dn"
+connectAttr "blinn9.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[58].dn"
 		;
-connectAttr "place2dTexture15.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[59].dn"
+connectAttr "blinn10SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[59].dn"
 		;
-connectAttr "blinn2SG2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[60].dn"
+connectAttr "grid4.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[60].dn"
 		;
-connectAttr "MatPared2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[61].dn"
+connectAttr "place2dTexture13.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[61].dn"
 		;
-connectAttr "GridPista2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[62].dn"
+connectAttr "grid1Material.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[62].dn"
 		;
-connectAttr "place2dTexture16.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[63].dn"
+connectAttr "MatTunnelEnt.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[63].dn"
 		;
-connectAttr "blinn4SG1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[64].dn"
+connectAttr "MatSpike.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[64].dn"
 		;
-connectAttr "MatTunnelCeil1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[65].dn"
+connectAttr "MatBanderaInicio.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[65].dn"
 		;
-connectAttr "place2dTexture17.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[66].dn"
+connectAttr "blinn6SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[66].dn"
 		;
-connectAttr "GridTunnelCeil1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[67].dn"
+connectAttr "MatBaranda.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[67].dn"
 		;
+connectAttr "polyAutoProj40.out" "polyAutoProj57.ip";
+connectAttr "|WallCurva4Right1|WallCurva4Right1.wm" "polyAutoProj57.mp";
 connectAttr "blinn1SG.pa" ":renderPartition.st" -na;
 connectAttr "blinn2SG.pa" ":renderPartition.st" -na;
 connectAttr "pasted__blinn2SG.pa" ":renderPartition.st" -na;
@@ -36406,4 +37851,4 @@ connectAttr "nave:groupId29.msg" ":initialShadingGroup.gn" -na;
 connectAttr "nave:groupId32.msg" ":initialShadingGroup.gn" -na;
 connectAttr "nave:groupId33.msg" ":initialShadingGroup.gn" -na;
 connectAttr "nave:groupId34.msg" ":initialShadingGroup.gn" -na;
-// End of MapaBasico.ma
+// End of MariaVictoria_JorgeMarcano.ma
