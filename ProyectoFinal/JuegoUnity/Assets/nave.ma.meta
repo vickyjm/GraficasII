@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: 4b15824ec9918c541bc3cefc30a7ad9a
+timeCreated: 1480189539
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: aspasTurb01
+    100002: aspasTurb02
+    100004: aspasTurbina
+    100006: aspasTurbina1
+    100008: baseTorreta
+    100010: baseTorreta01
+    100012: baseTorreta02
+    100014: centroNave01
+    100016: centroNave02
+    100018: logo
+    100020: //RootNode
+    100022: nave
+    100024: naveFinal
+    100026: torreta
+    100028: torretaEsfera
+    100030: torretaMisil
+    100032: transform1
+    100034: transform10
+    100036: transform11
+    100038: transform12
+    100040: transform13
+    100042: transform14
+    100044: transform15
+    100046: transform16
+    100048: transform17
+    100050: transform18
+    100052: transform19
+    100054: transform2
+    100056: transform3
+    100058: transform4
+    100060: transform5
+    100062: transform6
+    100064: transform7
+    100066: turbina01
+    100068: turbinaDerecha
+    100070: turbinaIzq
+    400000: aspasTurb01
+    400002: aspasTurb02
+    400004: aspasTurbina
+    400006: aspasTurbina1
+    400008: baseTorreta
+    400010: baseTorreta01
+    400012: baseTorreta02
+    400014: centroNave01
+    400016: centroNave02
+    400018: logo
+    400020: //RootNode
+    400022: nave
+    400024: naveFinal
+    400026: torreta
+    400028: torretaEsfera
+    400030: torretaMisil
+    400032: transform1
+    400034: transform10
+    400036: transform11
+    400038: transform12
+    400040: transform13
+    400042: transform14
+    400044: transform15
+    400046: transform16
+    400048: transform17
+    400050: transform18
+    400052: transform19
+    400054: transform2
+    400056: transform3
+    400058: transform4
+    400060: transform5
+    400062: transform6
+    400064: transform7
+    400066: turbina01
+    400068: turbinaDerecha
+    400070: turbinaIzq
+    2300000: naveFinal
+    3300000: naveFinal
+    4300000: naveFinal
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
