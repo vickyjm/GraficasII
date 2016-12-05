@@ -3,17 +3,18 @@ using System.Collections;
 
 public class NaveSola : MonoBehaviour {
 	[SerializeField]
-	private float rotateSpeed = 15.0f;
+	public float rotateSpeed = 1.5f;
 	public static int scoreInt = 0;
 	private GUIText scoreText;
 	bool coinGrab = false;
 	float speedSide = 15.0f;
-	public float speedFront = 35.0f;
+	public float speedFront = 10.0f;
 	float upSpeed = 10.0f;
 	// Use this for initialization
 	void Start () {
 		scoreText = GameObject.Find ("ScoreText").GetComponent<GUIText>();
 		scoreText.text = scoreInt.ToString();
+		speedFront = 10.0f;
 	}
 
 	private void moveForward(float speed) {
@@ -39,30 +40,29 @@ public class NaveSola : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		GameObject camera = GameObject.Find ("GameCamera");
 		if (Input.GetKey (KeyCode.UpArrow)) {
+			if (speedFront < 40)
+				speedFront += 0.1f;
+			
 			moveForward (speedFront);
 			if (Input.GetKey (KeyCode.RightArrow)) {
 				transform.Rotate (transform.up, 45 * rotateSpeed * Time.deltaTime);
-				//camera.transform.RotateAround (transform.position, transform.up, 45 * rotateSpeed * Time.deltaTime);
-
 				moveRight (speedSide);
-				//transform.RotateAround (transform.position, transform.forward, 45 * rotateSpeed * Time.deltaTime);
 			}
 			if (Input.GetKey (KeyCode.LeftArrow)) {
 				transform.Rotate (-transform.up, 45 * rotateSpeed * Time.deltaTime);
-				//camera.transform.RotateAround (transform.position, -transform.up, 45 * rotateSpeed * Time.deltaTime);
 				moveLeft (speedSide);
-				//transform.RotateAround (transform.position, -transform.forward, 45 * rotateSpeed * Time.deltaTime);
 			}
 			if (Input.GetKey (KeyCode.W)) {
 				moveUp (upSpeed);
-				//transform.RotateAround (transform.position, transform.right, 45 * rotateSpeed * Time.deltaTime);
 			}
 			if (Input.GetKey (KeyCode.S)) {
 				moveDown (upSpeed);
-				//transform.RotateAround (transform.position, -transform.right, 45 * rotateSpeed * Time.deltaTime);
 			}
+		} 
+		else {
+			if (speedFront > 10) 
+				speedFront -= 1.0f;
 		}
 
 		if (coinGrab) {
@@ -78,15 +78,20 @@ public class NaveSola : MonoBehaviour {
 		if(col.gameObject.tag == "Moneda") {
 			Destroy(col.gameObject);
 			coinGrab = true;
-			//scoreText.text = scoreInt.ToString();
 		}
-		//if(col.gameObject.tag == "Piso")
-		//{
-		//	transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y+1, transform.localPosition.z);
-		//}
-		//if(col.gameObject.tag == "Propellor")
-		//{
-		//	transform.parent.GetComponent<Nave> ().speedFront = 5.0f;
-		//}
+		if(col.gameObject.tag == "Propellor")
+			speedFront = 5.0f;
+		if (col.gameObject.tag == "Pipe") 
+			speedFront = 5.0f;
+		if (col.gameObject.tag == "Pared") 
+			speedFront = 5.0f;
+		if (col.gameObject.tag == "Sawblade") 
+			speedFront = 5.0f;
+		if (col.gameObject.tag == "Cube") 
+			speedFront = 5.0f;
+		if (col.gameObject.tag == "HoriWall")
+			speedFront = 5.0f;
+		if (col.gameObject.tag == "FinishLine")
+			Application.LoadLevel ("EndMenu");
 	}
 }

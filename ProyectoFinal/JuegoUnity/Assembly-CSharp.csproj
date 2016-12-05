@@ -49,10 +49,14 @@
      <Compile Include="Assets\Scripts\Moneda.cs" />
      <Compile Include="Assets\Scripts\Nave.cs" />
      <Compile Include="Assets\Scripts\NaveSola.cs" />
+     <Compile Include="Assets\Scripts\ParticleController.cs" />
      <Compile Include="Assets\Scripts\Pipe.cs" />
      <Compile Include="Assets\Scripts\Propellor.cs" />
      <Compile Include="Assets\Scripts\Sawblade.cs" />
      <Compile Include="Assets\Scripts\Sawblade2.cs" />
+     <Compile Include="Assets\Scripts\TextMouseOver.cs" />
+     <Compile Include="Assets\Scripts\TiltController.cs" />
+     <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

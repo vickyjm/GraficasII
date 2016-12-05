@@ -4,13 +4,13 @@ using System.Collections;
 public class Nave : MonoBehaviour {
 	[SerializeField]
 	float speedSide = 0.5f;
-	public float speedFront = 35.0f;
-	float rotateSpeed = 1.0f;
+	public float speedFront = 10.0f;
+	float rotateSpeed = 1.5f;
 	float upSpeed = 20.0f;
 
 	// Use this for initialization
 	void Start () {
-	
+		speedFront = 10.0f;
 	}
 		
 	private void moveForward(float speed) {
@@ -36,7 +36,7 @@ public class Nave : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey (KeyCode.UpArrow)) {
-
+			
 			moveForward (speedFront);
 
 			if (Input.GetKey (KeyCode.RightArrow)) {

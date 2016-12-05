@@ -33,6 +33,15 @@ public class Camara : MonoBehaviour
 		target = GameObject.Find ("NaveObject").transform;
 	}
 
+	void Update() {
+		Quaternion newRotation = target.rotation;
+		newRotation.x = 0;
+		newRotation.z = 0;
+		newRotation.y = 180 + newRotation.y;
+		transform.rotation = newRotation;
+	}
+
+
 	void  LateUpdate ()
 	{
 		// Early out if we don't have a target
@@ -40,27 +49,26 @@ public class Camara : MonoBehaviour
 			return;
 
 		// Calculate the current rotation angles
-		float wantedRotationAngle = target.eulerAngles.y;
+		//float wantedRotationAngle = target.eulerAngles.y;
 		float wantedHeight = target.position.y + height;
-		float currentRotationAngle = transform.eulerAngles.y;
+		//float currentRotationAngle = transform.eulerAngles.y;
 		float currentHeight = transform.position.y;
 
 		// Damp the rotation around the y-axis
-		currentRotationAngle = Mathf.LerpAngle (currentRotationAngle, wantedRotationAngle, rotationDamping * Time.deltaTime);
+		//currentRotationAngle = Mathf.LerpAngle (currentRotationAngle, wantedRotationAngle, rotationDamping * Time.deltaTime);
 		// Damp the height
 		currentHeight = Mathf.Lerp (currentHeight, wantedHeight, heightDamping * Time.deltaTime);
 
 		// Convert the angle into a rotation
-		Quaternion currentRotation = Quaternion.Euler (0, currentRotationAngle, 0);
+		//Quaternion currentRotation = Quaternion.Euler (0, currentRotationAngle, 0);
 
 		// Set the position of the camera on the x-z plane to:
 		// distance meters behind the target
 		transform.position = target.position;
-		transform.position -= currentRotation * Vector3.forward * distance;
+		transform.position -= Vector3.forward * distance;
 
 		// Set the height of the camera
 		transform.position = new Vector3(transform.position.x, target.position.y+4, transform.position.z + 11);
-
 		// Always look at the target
 		//transform.LookAt (target);
 	}
