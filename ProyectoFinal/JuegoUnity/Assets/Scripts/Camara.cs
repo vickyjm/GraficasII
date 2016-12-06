@@ -19,57 +19,22 @@ public class Camara : MonoBehaviour
      Then we apply the smoothed values to the transform's position.
      */
 
-	// The target we are following
-	public Transform target;
-	// The distance in the x-z plane to the target
-	public float distance = 50.0f;
-	// the height we want the camera to be above the target
-	public float height = 5.0f;
-	// How much we 
-	public float heightDamping = 0.5f;
-	public float rotationDamping = 20.0f;
+	Vector3 initialPos;
 
 	void Start() {
-		target = GameObject.Find ("NaveObject").transform;
+		initialPos = transform.localPosition;
+		//transform.localPosition = new Vector3 (transform.localPosition.x, transform.localPosition.y - 5, transform.localPosition.z);
 	}
 
 	void Update() {
-		Quaternion newRotation = target.rotation;
-		newRotation.x = 0;
-		newRotation.z = 0;
-		newRotation.y = 180 + newRotation.y;
-		transform.rotation = newRotation;
+
 	}
-
-
-	void  LateUpdate ()
-	{
-		// Early out if we don't have a target
-		if (!target)
-			return;
-
-		// Calculate the current rotation angles
-		//float wantedRotationAngle = target.eulerAngles.y;
-		float wantedHeight = target.position.y + height;
-		//float currentRotationAngle = transform.eulerAngles.y;
-		float currentHeight = transform.position.y;
-
-		// Damp the rotation around the y-axis
-		//currentRotationAngle = Mathf.LerpAngle (currentRotationAngle, wantedRotationAngle, rotationDamping * Time.deltaTime);
-		// Damp the height
-		currentHeight = Mathf.Lerp (currentHeight, wantedHeight, heightDamping * Time.deltaTime);
-
-		// Convert the angle into a rotation
-		//Quaternion currentRotation = Quaternion.Euler (0, currentRotationAngle, 0);
-
-		// Set the position of the camera on the x-z plane to:
-		// distance meters behind the target
-		transform.position = target.position;
-		transform.position -= Vector3.forward * distance;
-
-		// Set the height of the camera
-		transform.position = new Vector3(transform.position.x, target.position.y+4, transform.position.z + 11);
-		// Always look at the target
-		//transform.LookAt (target);
+		
+	void OnTriggerEnter (Collider col) {
+		if(col.gameObject.tag == "CamaraClamp")
+			transform.localPosition = new Vector3 (transform.localPosition.x, transform.localPosition.y - 5, transform.localPosition.z);
+		if (col.gameObject.tag == "CamaraUnclamp")
+			transform.localPosition = initialPos;
 	}
+		
 }

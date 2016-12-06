@@ -10,9 +10,12 @@ public class NaveSola : MonoBehaviour {
 	float speedSide = 15.0f;
 	public float speedFront = 10.0f;
 	float upSpeed = 10.0f;
+	Collider camaraCol;
 	// Use this for initialization
 	void Start () {
+		scoreInt = 0;
 		scoreText = GameObject.Find ("ScoreText").GetComponent<GUIText>();
+		camaraCol = GameObject.Find ("GameCamera").GetComponent<Collider> ();
 		scoreText.text = scoreInt.ToString();
 		speedFront = 10.0f;
 	}
@@ -30,11 +33,13 @@ public class NaveSola : MonoBehaviour {
 	}
 
 	private void moveUp(float speed) {
-		transform.localPosition += transform.up * speed * Time.deltaTime;
+		if (transform.localPosition.y < 13.5)
+			transform.localPosition += transform.up * speed * Time.deltaTime;
 	}
 
 	private void moveDown(float speed) {
-		transform.localPosition -= transform.up * speed * Time.deltaTime;
+		if (transform.localPosition.y > -11.5)
+			transform.localPosition -= transform.up * speed * Time.deltaTime;
 	}
 
 
@@ -71,7 +76,6 @@ public class NaveSola : MonoBehaviour {
 			coinGrab = false;
 		}
 	}
-
 
 	void OnTriggerEnter (Collider col)
 	{
